@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><TalendHadoopCluster:HadoopClusterConnection xmlns:TalendHadoopCluster="http://www.talend.org/hadoopcluster" xmlns:xmi="http://www.omg.org/XMI" authMode="USERNAME" clouderaNaviClientUrl="http://localhost" clouderaNaviMetadataUrl="http://localhost:7187/api/v8/metadata/plugin" clouderaNaviUrl="http://localhost:7187/api/v8/" clouderaNaviUserName="username" dfVersion="HDP_3_1_4_12_1" distribution="HORTONWORKS" group="" jobHistory="0.0.0.0:10020" jobHistoryPrincipal="mapred/_HOST@EXAMPLE.COM" jobTrackerURI="hadoop-pro-master.wingmoney.com:8050" jtOrRmPrincipal="yarn/_HOST@EXAMPLE.COM" label="wing" name="wing" nameNodeURI="hdfs://hadoop-pro-master.wingmoney.com:8020" preloadAuthentification="true" principal="nn/_HOST@EXAMPLE.COM" rmScheduler="hadoop-pro-master.wingmoney.com:8030" stagingDirectory="/tmp/hive" useDNHost="true" useSparkProperties="true" useYarn="true" userName="lendb" xmi:id="_RuYJ4BF5Ee6PcfwGjxyyjA" xmi:version="2.0">
+  <connectionList>_EAG7sBF8Ee6PcfwGjxyyjA</connectionList>
   <parameters key="CONN_PARA_KEY_HADOOP_CONF_SPECIFIC_JAR" value="" xmi:id="_RuYJ4RF5Ee6PcfwGjxyyjA"/>
   <parameters key="CONN_PARA_KEY_SET_HADOOP_CONF" value="false" xmi:id="_RuYJ4hF5Ee6PcfwGjxyyjA"/>
   <parameters key="CONN_PARA_KEY_CDE_WORKLOAD_PASSWORD" value="" xmi:id="_RuYJ4xF5Ee6PcfwGjxyyjA"/>
@@ -9,13 +10,13 @@
   <parameters key="CONN_PARA_KEY_CDE_TOKEN" value="" xmi:id="_RuYJ6BF5Ee6PcfwGjxyyjA"/>
   <parameters key="CONN_PARA_KEY_UNIV_STANDALONE_EXEC_CORE" value="" xmi:id="_RuYJ6RF5Ee6PcfwGjxyyjA"/>
   <parameters key="CONN_PARA_KEY_CDE_TOKEN_ENDPOINT" value="" xmi:id="_RuYJ6hF5Ee6PcfwGjxyyjA"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2c4c78e9-7f2e-49fe-acf1-69d72e8959f2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>A+KJ7X/YoMhYnBGhGUO+ycEegl4T3q1djJnw9zTtSB9LbO4AE/OiQByZg4FCrp3w8JIin3q2TgiU&#13;
-DwkWqtKypg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8cd15447-1376-4c5f-be45-7d82f391224e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ofxp3xM/oJYaHbzWT78+mEAjjdYSOqs8PmYpIF/ob1WrEENU5BP8op1LwfW8e74i2M+Udm+MG7mF&#13;
-Iuhq8h15FQ==</DigestValue></Reference></SignedInfo><SignatureValue>gUjiM8HJZP1JAYPBzfg/OkARkkWcS1QrfT1JeC23REgCGOIgL/p/wzFCH7gb5okO6dloax9UwtJc&#13;
-oER2fQllOopKa58YNfXoUu9PMPmGMpaWoO3INm81mBVTgSqjdVULNo1r/pz4Qc9GoEwkvb4KXxqP&#13;
-cxNpou33hTEHaSZ68f+u9aGKRH+DGgYVtqMxOCHVcRIBcjJA2+vtEeYXx13aLRYLNYgfpAGMWTcB&#13;
-AkAIh9fRivTCtQdfrcSy83OYAchuq46cJl7Nsmmo7XVBbxQnpJ6iDtZL7iwXHTDtzT0y8CCbS1DE&#13;
-kJaiBaclMgZaAVPBk46U3bimc9w6YRGmmGLT8w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_85f9453b-69f1-4c76-994b-3aa682cc506c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pwTvZwkK8ue0IECzaGGpbbfx8NnFwEjKL+WRVPD80oT/Xbt2NHyujutg0TvGx/lbFE0ceXLeqYAG&#13;
+W7zpK/3ohA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_da5c5b87-4a02-435b-8c61-e63f741fc486"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>b+seAeCgREUl7Q0mg2U+cTO0h57F4TEaA3/mpfaPCNHCLtYkKfGSuUm+ksUTCVziN9e7tgWospmz&#13;
+ZN6A+3yI3A==</DigestValue></Reference></SignedInfo><SignatureValue>OH5vVmmUvL/ltYSNF6cRjYsOnLvxDISh2ClgfrnBiA9IYtZ4k+phuAEmh2B9qXOa3+80K+zjvXzJ&#13;
+EoTR10nXjl8HIzemw0kehXwL8pbZtxGRrD9uY2riBZf3lmDOb9yCo04K3exn44Rr2rIqAPEJlfsp&#13;
+HCcW2//bX9fuxu4y5NwCUkD9Mz25kS60M2ChzzCHVDCkjOplUuVHTYsoCMdGiS2r7TUdxZ/OqHte&#13;
+d42h35S2YEO4ewFmwUSckjGiUzREfBiJQobkCL+puuSGPqAotmdMMwE4KjGOZIXrAPfEMsBkgL0t&#13;
+wfDaNOQrJ5PUXQo2DpMgfgFC3FAQpyKSu2Fr2w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -37,4 +38,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8cd15447-1376-4c5f-be45-7d82f391224e" Target="#_2c4c78e9-7f2e-49fe-acf1-69d72e8959f2"><Timestamp>2023-06-23 03:51:47</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></TalendHadoopCluster:HadoopClusterConnection>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_da5c5b87-4a02-435b-8c61-e63f741fc486" Target="#_85f9453b-69f1-4c76-994b-3aa682cc506c"><Timestamp>2023-06-23 04:11:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></TalendHadoopCluster:HadoopClusterConnection>
