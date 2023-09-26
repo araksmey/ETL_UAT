@@ -1,0 +1,218 @@
+package routines;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.HashMap;
+import java.util.Map;
+import net.minidev.json.parser.JSONParser;
+import net.minidev.json.parser.ParseException;
+import routines.system.Dynamic;
+import routines.system.DynamicMetadata;
+import net.minidev.json.JSONObject;
+import net.minidev.json.JSONArray;
+import java.nio.charset.StandardCharsets;
+
+public class DynamicJson {
+
+    public static Map<String, String> level_0(String datas) {
+    	Map<String, String> result = new HashMap<>();
+    	JSONParser parser = new JSONParser();
+    	JSONObject json_array = new JSONObject();
+    	try {
+			json_array = (JSONObject) parser.parse(datas);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+    	
+    	String values = "";
+    	String column = "";
+
+    	for (String key: json_array.keySet()){
+			column += key + ";";
+			values += json_array.get(key) + ";";
+    	}
+    	values = values.substring(0, values.length() - 1);
+    	column = column.substring(0, column.length() - 1);
+    	result.put("column", column);
+    	result.put("value", values);
+    	return result;
+    	
+    }
+    public static Map<String, String> level_1(String datas, String tag_name) {
+    	Map<String, String> result = new HashMap<>();
+    	JSONParser parser = new JSONParser();
+    	JSONObject json_array = new JSONObject();
+		try {
+			json_array = (JSONObject)parser.parse(datas);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+
+
+    	String values = "";
+    	String column = "";
+
+    	for (String key: json_array.keySet()){
+    		if(key.equals(tag_name)){
+    			for(Object object1: (JSONArray)json_array.get(key)){
+
+    				String val = "";
+    				String col = "";
+    				JSONObject json_array1 = (JSONObject) object1;
+    				for (String key1: json_array1.keySet()){
+    					col += key1 + ";";
+    					if(json_array1.get(key1)==null || json_array1.get(key1).toString().isEmpty()) {
+    						val += "null;";
+    					}
+    					else {
+    						val += json_array1.get(key1) + ";";
+    					}
+    					
+    				}
+    				col = col.substring(0, col.length() - 1);
+    				val = val.substring(0, val.length() - 1);
+    				column += col + "~";
+    				values += val + "~";
+
+    			}
+    		}
+    	}
+    	
+    	if(!values.equals("")) {
+    		values = values.substring(0, values.length() - 1);
+    	}
+    	if(!column.equals("")) {
+    		column = column.substring(0, column.length() - 1);
+    	}
+    	result.put("column", column);
+    	result.put("value", values);
+    	return result;
+    }
+    
+    public static Dynamic string_record_to_dynamic(String values, String column, String date_format, String date_column, String date_result_format, String target_column, Map<String, String> additional_field) {
+    	Dynamic dcg_tDBInput_3 = new Dynamic();
+    	
+    	
+    	String[] cols = column.split("~");
+    	String[] vals = values.split("~");
+    	String[] d_format = null;
+    	String[] d_column = null;
+    	String[] d_result_format = null;
+    	String[] t_col = null;
+    	
+    	if(date_format != null) {
+    		d_format = date_format.split(";");
+    	}
+    	if(date_column != null) {
+    		d_column = date_column.split(";");
+    	}
+    	if(date_result_format != null) {
+    		d_result_format = date_result_format.split(";");
+    	}
+    	if(target_column != null) {
+    		t_col = target_column.split(",");
+    	}
+    	
+    	String[] col = cols[0].split(";");
+    	
+    	for(int j=0; j<col.length; j++){
+    		routines.system.DynamicMetadata dcm_tDBInput_2 = new routines.system.DynamicMetadata();
+    		dcm_tDBInput_2.setName(col[j]);
+			dcm_tDBInput_2.setDbName(col[j]);
+			
+			if(target_column != null) {
+				for(int k = 0; k<t_col.length; k++) {
+	    			String[] target_db_column = t_col[k].split(":");
+	    			if(col[j].toLowerCase().equals(target_db_column[1].toLowerCase())) {
+	    				dcm_tDBInput_2.setName(target_db_column[0]);
+	    				dcm_tDBInput_2.setDbName(target_db_column[0]);
+	    				break;
+	    			}
+	    		}
+			}
+    		
+    		dcm_tDBInput_2.setType(routines.system.Dynamic.getTalendTypeFromDBType("oracle_id",
+    							col[j].toUpperCase(), 0, 0));
+    		dcm_tDBInput_2.setDbType("VARCHAR2");
+    		dcm_tDBInput_2.setPrecision(0);
+    		dcm_tDBInput_2.setNullable(false);
+    		dcm_tDBInput_2.setKey(false);
+    		dcm_tDBInput_2.setSourceType(DynamicMetadata.sourceTypes.database);
+    		dcg_tDBInput_3.metadatas.add(dcm_tDBInput_2);
+    	}
+    	
+    	// Set value to column
+    	for(int i=0; i<vals.length; i++){
+    		String[] val = vals[i].split(";");
+    		for(int j=0; j<col.length; j++){
+    			if(d_column != null) {
+	    			for(int k=0; k<d_column.length; k++) {
+	    				if(col[j].toUpperCase().equals(d_column[k])){
+	        				try {
+        						dcg_tDBInput_3.setColumnValue(j, TalendDate.TO_CHAR(TalendDate.TO_DATE(val[j], d_format[k]), d_result_format[k]));
+        						break;
+	    					} catch (java.text.ParseException e) {
+	    						// TODO Auto-generated catch block
+	    						e.printStackTrace();
+	    					}
+	        			}
+	        			else {
+	        				dcg_tDBInput_3.setColumnValue(j, val[j]);
+	        			}
+	    			}
+    			}
+    			else {
+    				dcg_tDBInput_3.setColumnValue(j, val[j]);
+    			}
+    		}
+    	}
+    	
+    	if(additional_field != null) {
+    		for(String key: additional_field.keySet()) {
+        		routines.system.DynamicMetadata dcm_tDBInput_2 = new routines.system.DynamicMetadata();
+        		dcm_tDBInput_2.setName(key);
+    			dcm_tDBInput_2.setDbName(key);
+        		dcm_tDBInput_2.setType(routines.system.Dynamic.getTalendTypeFromDBType("oracle_id",
+        							key.toUpperCase(), 0, 0));
+        		dcm_tDBInput_2.setDbType("VARCHAR2");
+        		dcm_tDBInput_2.setPrecision(0);
+        		dcm_tDBInput_2.setNullable(false);
+        		dcm_tDBInput_2.setKey(false);
+        		dcm_tDBInput_2.setSourceType(DynamicMetadata.sourceTypes.database);
+        		dcg_tDBInput_3.metadatas.add(dcm_tDBInput_2);
+        		dcg_tDBInput_3.setColumnValue(col.length, additional_field.get(key));
+        	}
+    	}
+    	
+    	return dcg_tDBInput_3;
+    }
+    
+    public static JSONObject dynamic_to_json(Dynamic datas, String request_column) {
+    	JSONObject obj = new JSONObject();
+    	if(request_column != null) {
+    		String[] req_col = request_column.split(",");
+    		
+    		for(int i=0; i<req_col.length; i++) {
+    			if(datas.getColumnValue(req_col[i].toUpperCase())!= null) {
+    				obj.put(req_col[i], datas.getColumnValue(req_col[i].toUpperCase()));
+    			}
+    			else {
+    				obj.put(req_col[i], "");
+    			}
+    		}
+    	}
+    	else {
+    		for(String i: datas.getAllColumnNames()){
+        		obj.put(i, datas.getColumnValue(i));
+        	}
+    	}
+    	return obj;
+    }
+    
+    public static String encodeValue(String value) {
+        try {
+            return URLEncoder.encode(value, StandardCharsets.UTF_8.toString());
+        } catch (UnsupportedEncodingException ex) {
+            throw new RuntimeException(ex.getCause());
+        }
+    }
+}

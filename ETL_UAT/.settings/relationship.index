@@ -13,4 +13,19 @@
     "version" : "Latest",
     "type" : "schema"
   } ]
+}, {
+  "baseItem" : {
+    "id" : "_tSr0AAqVEe6IGunveV_C7A",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_-aXh8PaZEeyD44Tj_5jxJg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "DynamicJson",
+    "version" : "Latest",
+    "type" : "routine"
+  } ]
 } ]
