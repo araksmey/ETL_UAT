@@ -46,7 +46,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Wui9adFK/B71PjKTE7odc+xtRbakYj7RUROirvuV"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:G3xPRcX1yL2RJ7pvmQuFSCeMZqjzgQlhf4R0968K"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -81,7 +81,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Mp7Oh0/n5EqKcRW9TkUye8+idjV2MSHguW9/nnK9"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:MlkPkKaLrI3u3vHJDLDpuIDgHNz/wq5r2KB+rqgD"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -124,8 +124,8 @@
     <elementParameter field="CLOSED_LIST" name="KAFKA_VERSION" value="KAFKA_3_2_3"/>
     <elementParameter field="TEXT" name="ZOOKEEPER_CONNECT" show="false" value="&quot;zk1:port1,zk2:port2,...&quot;"/>
     <elementParameter field="TEXT" name="BROKER_LIST" value="&quot;10.120.100.131:9092&quot;"/>
-    <elementParameter field="TEXT" name="KAFKA_TOPIC" value="&quot;OEMDB_AUTOMATE_JOB&quot;"/>
-    <elementParameter field="TEXT" name="GROUP_ID" value="&quot;talend-4&quot;"/>
+    <elementParameter field="TEXT" name="KAFKA_TOPIC" value="&quot;OEMDB_AUTOMATE_QUERY&quot;"/>
+    <elementParameter field="TEXT" name="GROUP_ID" value="context.group_id"/>
     <elementParameter field="CHECK" name="RESET_OFFSET" value="true"/>
     <elementParameter field="CLOSED_LIST" name="AUTO_OFFSET_RESET" show="false" value="LARGEST"/>
     <elementParameter field="CLOSED_LIST" name="AUTO_OFFSET_RESET_NEW" value="EARLIEST"/>
@@ -180,19 +180,39 @@
     <elementParameter field="TEXT" name="LOOP_QUERY" show="false" value="&quot;/bills/bill/line&quot;"/>
     <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.payload&quot;"/>
     <elementParameter field="TABLE" name="MAPPING" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUERY_ID"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RECURRENCE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUERY_NAME"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RUN_AT_DAY"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUERY"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RUN_AT_TIME"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HEADER_COLUMN"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUMMARY_HEADER_QUERY"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUMMARY_FOOTER_QUERY"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STATUS"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATA_SOURCE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXPORT_TYPE_QUERY"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
@@ -206,14 +226,24 @@
       <elementValue elementRef="ISARRAY" value="false"/>
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
-      <elementValue elementRef="QUERY" value="&quot;$.ID&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RECURRENCE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.RECURRENCE&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RUN_AT_DAY"/>
-      <elementValue elementRef="QUERY" value="&quot;$.RUN_AT_DAY&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RUN_AT_TIME"/>
-      <elementValue elementRef="QUERY" value="&quot;$.RUN_AT_TIME&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUERY_ID"/>
+      <elementValue elementRef="QUERY" value="&quot;$.QUERY_ID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUERY_NAME"/>
+      <elementValue elementRef="QUERY" value="&quot;$.QUERY_NAME&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUERY"/>
+      <elementValue elementRef="QUERY" value="&quot;$.QUERY&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HEADER_COLUMN"/>
+      <elementValue elementRef="QUERY" value="&quot;$.HEADER_COLUMN&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUMMARY_HEADER_QUERY"/>
+      <elementValue elementRef="QUERY" value="&quot;$.SUMMARY_HEADER_QUERY&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUMMARY_FOOTER_QUERY"/>
+      <elementValue elementRef="QUERY" value="&quot;$.SUMMARY_FOOTER_QUERY&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STATUS"/>
+      <elementValue elementRef="QUERY" value="&quot;$.STATUS&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATA_SOURCE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.DATA_SOURCE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXPORT_TYPE_QUERY"/>
+      <elementValue elementRef="QUERY" value="&quot;$.EXPORT_TYPE_QUERY&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="CREATED_DATE"/>
       <elementValue elementRef="QUERY" value="&quot;$.CREATED_DATE&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MODIFIED_DATE"/>
@@ -228,18 +258,28 @@
     <elementParameter field="CHECK" name="SPLIT_LIST" show="false" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tExtractJSONFields_1">
-      <column comment="" key="false" length="-1" name="ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RECURRENCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RUN_AT_DAY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RUN_AT_TIME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HEADER_COLUMN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SUMMARY_HEADER_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SUMMARY_FOOTER_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STATUS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATA_SOURCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXPORT_TYPE_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CREATED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MODIFIED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="-1" name="ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RECURRENCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RUN_AT_DAY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RUN_AT_TIME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HEADER_COLUMN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SUMMARY_HEADER_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SUMMARY_FOOTER_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STATUS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATA_SOURCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXPORT_TYPE_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CREATED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MODIFIED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -252,7 +292,7 @@
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
     <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-    <elementParameter field="IMAGE" name="PREVIEW" value="_BsC8MF3MEe6Lrfm36OpVVw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_rTnaQF3OEe6Lrfm36OpVVw-tMap_1-PREVIEW.bmp"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
     <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
     <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -262,10 +302,15 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out1">
-      <column comment="" key="false" length="-1" name="ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RECURRENCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RUN_AT_DAY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RUN_AT_TIME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HEADER_COLUMN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SUMMARY_HEADER_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SUMMARY_FOOTER_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STATUS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATA_SOURCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXPORT_TYPE_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CREATED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MODIFIED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
@@ -276,18 +321,28 @@
         <mapperTableEntries expression="row3.MODIFIED_DATE == null?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date(((long)(row3.MODIFIED_DATE)) -25200000)), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="modified_date" type="id_Date"/>
       </varTables>
       <outputTables name="out1" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row3.ID " name="ID" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.RECURRENCE " name="RECURRENCE" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.RUN_AT_DAY " name="RUN_AT_DAY" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.RUN_AT_TIME " name="RUN_AT_TIME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.QUERY_ID " name="QUERY_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.QUERY_NAME " name="QUERY_NAME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.QUERY " name="QUERY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.HEADER_COLUMN " name="HEADER_COLUMN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.SUMMARY_HEADER_QUERY " name="SUMMARY_HEADER_QUERY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.SUMMARY_FOOTER_QUERY " name="SUMMARY_FOOTER_QUERY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.STATUS " name="STATUS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.DATA_SOURCE " name="DATA_SOURCE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.EXPORT_TYPE_QUERY " name="EXPORT_TYPE_QUERY" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.created_date " name="CREATED_DATE" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="Var.modified_date " name="MODIFIED_DATE" nullable="true" type="id_Date"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="ID" nullable="true" type="id_String"/>
-        <mapperTableEntries name="RECURRENCE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="RUN_AT_DAY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="RUN_AT_TIME" nullable="true" type="id_String"/>
+        <mapperTableEntries name="QUERY_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="QUERY_NAME" nullable="true" type="id_String"/>
+        <mapperTableEntries name="QUERY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="HEADER_COLUMN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SUMMARY_HEADER_QUERY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SUMMARY_FOOTER_QUERY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="STATUS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="DATA_SOURCE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EXPORT_TYPE_QUERY" nullable="true" type="id_String"/>
         <mapperTableEntries name="CREATED_DATE" nullable="true" type="id_Long"/>
         <mapperTableEntries name="MODIFIED_DATE" nullable="true" type="id_Long"/>
       </inputTables>
@@ -309,8 +364,8 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;MDWH&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;STAGING&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;STAGING&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IUXPjbVdrbzoYr6fuMcHWM0a6/STKfOB/aSZzdroZt4aQVWznn3/1Qb+A4To"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;REALTIME_AUTOMATE_JOB&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ik8ceaqX9doJ2W1yCYuAxv9TQGDdEFvxs7EjyYpuFndaJQ5S8Z6mBENjnPao"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;REALTIME_AUTOMATE_QUERY&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
@@ -330,22 +385,47 @@
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
     <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="ID"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUERY_ID"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RECURRENCE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUERY_NAME"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RUN_AT_DAY"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUERY"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RUN_AT_TIME"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HEADER_COLUMN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUMMARY_HEADER_QUERY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUMMARY_FOOTER_QUERY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STATUS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATA_SOURCE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXPORT_TYPE_QUERY"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -376,22 +456,112 @@
     <elementParameter field="TEXT" name="LABEL" value="MSTAGING"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" key="true" length="-1" name="ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RECURRENCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RUN_AT_DAY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RUN_AT_TIME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HEADER_COLUMN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SUMMARY_HEADER_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SUMMARY_FOOTER_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STATUS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATA_SOURCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXPORT_TYPE_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CREATED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MODIFIED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="true" length="-1" name="ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RECURRENCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RUN_AT_DAY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RUN_AT_TIME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HEADER_COLUMN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SUMMARY_HEADER_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SUMMARY_FOOTER_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STATUS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATA_SOURCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXPORT_TYPE_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CREATED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MODIFIED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_-aXh8PaZEeyD44Tj_5jxJg"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;10.120.100.105&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;10.120.100.105&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1530&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;MDWH&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;MDWH&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;STAGING&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;STAGING&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9fkohIWBujfjB1FPIcY+FZA4KLNFpo93bYGI5xi8L90+Xnuh5fmiqiIAL/ml"/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select * from staging.realtime_AUTOMATE_QUERY&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUERY_ID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUERY_NAME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="QUERY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="HEADER_COLUMN"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUMMARY_HEADER_QUERY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SUMMARY_FOOTER_QUERY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STATUS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DATA_SOURCE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXPORT_TYPE_QUERY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CREATED_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODIFIED_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="MSTAGING"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="-1" name="QUERY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HEADER_COLUMN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SUMMARY_HEADER_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SUMMARY_FOOTER_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="STATUS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DATA_SOURCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXPORT_TYPE_QUERY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="CLOB" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CREATED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODIFIED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tKafkaInput_1" offsetLabelX="0" offsetLabelY="0" source="tKafkaInput_1" target="tExtractJSONFields_1">
@@ -415,6 +585,33 @@
       <elementValue elementRef="TRACE_COLUMN" value="MODIFIED_DATE"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUMMARY_FOOTER_QUERY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STATUS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUERY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUERY_NAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EXPORT_TYPE_QUERY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUMMARY_HEADER_QUERY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATA_SOURCE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HEADER_COLUMN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUERY_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
@@ -436,6 +633,33 @@
       <elementValue elementRef="TRACE_COLUMN" value="MODIFIED_DATE"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUMMARY_FOOTER_QUERY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="STATUS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUERY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUERY_NAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EXPORT_TYPE_QUERY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SUMMARY_HEADER_QUERY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DATA_SOURCE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HEADER_COLUMN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="QUERY_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
@@ -445,13 +669,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b69523d9-ed1c-4c42-b924-1350d187cd48"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Af8rIyiccHGaUdd+6Z7u9D/n52GxGz09gAvw5HjEAtwwA65P43bnV0Qhj6vl0wTsU4VJqm44VMK9&#13;
-vxDd0Pjc/g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7eb06db7-47a2-450b-9c52-16a7f8c6e875"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Tr60FP3IMqNvaZa6kQ0z0nKZorYNETkFlp3LjmMW1rdVMsFGzzqFP3GxuDBcIeKq32gpIOMiwkAG&#13;
-AtNxgshSvA==</DigestValue></Reference></SignedInfo><SignatureValue>Us3uJgWLtegtyQe0Ku3vldtw3iAFKNUzJdveRzTjPBp3h50NdjPc8RsW4yvqjnQJL4tu5fdEeWRu&#13;
-98Tn7q1rlXEr1X9zQq0bwNKLyBNQZ4oFNLfb6Ujg/8Rmx9eJF1yAGxjJFG4PgQzyaEcLUWwsmsze&#13;
-NwcmlE5RiH0z5jeYRV2JbtlhSHtiihfJmrE0yAGm5IB9rNglVQ68fh2vvLiLFZOjc0gY14SRWHyH&#13;
-JsChzs1fQ97KWNelRCZdgkfBk6WPspvWykIyysRI8XRCuLQsMW0f6uQkt9adAqVeb7wJYr30IFNC&#13;
-thsQBeqauSMQVlpaiXxEOCm/deHjdd3P1anCNg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d1a7c46b-b81a-4f66-a923-11ae894a2631"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UKudQuSelmAzh9/UODhNB+DO79v1mFH5awA+JJu+rvj0BRQRpraN6yi6XHOo55hh0MCY+DLvE9jv&#13;
+HseCvZAUIw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e0c0f2e3-64a7-4a65-a46f-71c2d9245b5b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FX4sEBfmQJVs33hAXPYxyk3oNc6KX3dK2yXuymFNOSC5sR+hwDom1ARvJZXnPOdY3/ykAuB3M7nt&#13;
+7OYUtMrTjQ==</DigestValue></Reference></SignedInfo><SignatureValue>OTGduK6LLX4i0zTrGsFu4tKWL2Wb4AN7+yWReOE/BeqNIaIZc+gx3rAnS3BN+6FydMOmRlUCPM5t&#13;
+NOgYVMiuDCa5VeSHO3muVdTOfZTChQknrAnYo0Xh3QYQTYdfJ4nByTG974lzOH7FTNkIxinnDEnj&#13;
+6p6zxPSlTpOBCZxZ4RkI1uzoq740Ohl5QUFCSYAkIld7vBkrbEObGn11gZ1s2pD1qgsJe5+T0c8U&#13;
+Q+kwSky5SANV9dRLn2P/73Ik10jXxixgUB8guM4beeDbPia2fkZDi4LXZ7i63zgKo80zYZkPEDAP&#13;
+zIFxz5D4x3iYSaRls6LHo18B22owF0x9tnqjKA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -473,4 +702,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7eb06db7-47a2-450b-9c52-16a7f8c6e875" Target="#_b69523d9-ed1c-4c42-b924-1350d187cd48"><Timestamp>2023-09-28 07:14:35</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e0c0f2e3-64a7-4a65-a46f-71c2d9245b5b" Target="#_d1a7c46b-b81a-4f66-a923-11ae894a2631"><Timestamp>2023-09-28 07:24:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
