@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" internalId="_XLCowFwpEe6rG-jalNJv9w" name="group_id" prompt="group_id?" promptNeeded="false" repositoryContextId="_M4qaAFwpEe6rG-jalNJv9w" type="id_String" value="talend-3"/>
-  </context>
+  <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="CHECK" name="LOG4J_RUN_ACTIVATE" show="false" value="true"/>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -48,7 +46,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:pigt84fEYBVFfpVUkyRpHLwXtsE8MaB6DeLfxPOT"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:FO9DgMZIWI7Urmj6X2BAtfEguujkMtTdcwinGsdE"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -83,7 +81,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:YxEliv2KxaCfgrBgS4lwFZFAaMP60XrcjRG+hAeG"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:woQlZTgMImf2t+xgFcDpVCiWXz91NjU+KNE9uYtD"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -128,7 +126,7 @@
     <elementParameter field="TEXT" name="ZOOKEEPER_CONNECT" show="false" value="&quot;zk1:port1,zk2:port2,...&quot;"/>
     <elementParameter field="TEXT" name="BROKER_LIST" value="&quot;10.120.100.131:9092&quot;"/>
     <elementParameter field="TEXT" name="KAFKA_TOPIC" value="&quot;OEMDB_AUTOMATE_PROCESS&quot;"/>
-    <elementParameter field="TEXT" name="GROUP_ID" value="context.group_id"/>
+    <elementParameter field="TEXT" name="GROUP_ID" value="&quot;talend2&quot;"/>
     <elementParameter field="CHECK" name="RESET_OFFSET" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTO_OFFSET_RESET" show="false" value="LARGEST"/>
     <elementParameter field="CLOSED_LIST" name="AUTO_OFFSET_RESET_NEW" value="LATEST"/>
@@ -615,12 +613,12 @@
       <column comment="" key="false" length="-1" name="ZIP_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row3.PROCESS_DATE == 0?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date(((long)(row3.PROCESS_DATE)) - 25200000)), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="process_date" type="id_Date"/>
-        <mapperTableEntries expression="row3.FROM_DATETIME == 0?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date(((long)(row3.FROM_DATETIME)) -25200000)), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="from_date" type="id_Date"/>
-        <mapperTableEntries expression="row3.TO_DATETIME == 0?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date(((long)(row3.TO_DATETIME))-25200000)), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="to_date" type="id_Date"/>
-        <mapperTableEntries expression="row3.FINISH_DATE == null?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date(((long)(row3.FINISH_DATE))-25200000)), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="finish_date" type="id_Date"/>
+        <mapperTableEntries expression="row3.PROCESS_DATE == 0?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date((long)(row3.PROCESS_DATE))), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="process_date" type="id_Date"/>
+        <mapperTableEntries expression="row3.FROM_DATETIME == 0?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date((long)(row3.FROM_DATETIME))), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="from_date" type="id_Date"/>
+        <mapperTableEntries expression="row3.TO_DATETIME == 0?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date((long)(row3.TO_DATETIME))), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="to_date" type="id_Date"/>
+        <mapperTableEntries expression="row3.FINISH_DATE == null?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date((long)(row3.FINISH_DATE))), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="finish_date" type="id_Date"/>
       </varTables>
       <outputTables name="out1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row3.PROCESS_ID " name="PROCESS_ID" nullable="true" type="id_String"/>
@@ -732,11 +730,11 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;MDWH&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;STAGING&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;STAGING&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qmA9HbUzSALtom0mWcW8ICDSfzswYL161sfv3FRl/N+B7llhUpDRQrHku+Qv"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hm5VuGYENB5gRerA5klnejezXifFDT8IKkY/AAQKz+e0BX6f4ac6YADOWcgi"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;REALTIME_AUTOMATE_PROCESS&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -979,9 +977,9 @@
     <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
     <elementParameter field="CHECK" name="CONTAIN_BLOB_FROM_OTHER_DB" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" show="false" value="false"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
     <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
@@ -989,7 +987,7 @@
     <elementParameter field="TEXT" name="LABEL" value="MSTAGING"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" key="true" length="-1" name="PROCESS_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PROCESS_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PROCESS_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="REPORT_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="REPORT_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
@@ -1035,7 +1033,7 @@
       <column comment="" key="false" length="-1" name="ZIP_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="true" length="-1" name="PROCESS_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PROCESS_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="PROCESS_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="REPORT_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="REPORT_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
@@ -1100,13 +1098,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_77c463a1-f4cb-43c8-ae8b-85d68d4b462b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kDI47aJP5ubcPaO5v8aceyCaEMeqICTf5GmX1DP5YeDzS2GXIosfVveqgSqO+H1kUMtudHdPN4+D&#13;
-3a1tOARzbg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_15360a62-712b-4890-b6d0-58a5ec23179c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fibo/U8MZY40SJXVjqTWKt1h1NXxkXARowo5+56aYa1wXTs5CLd8744xeya/SVDS7SEt0a0BAz1k&#13;
-QMobcEmajA==</DigestValue></Reference></SignedInfo><SignatureValue>R3LPskIOYGHsGdEyr2CtAXIHJhFAL464vfffDN1a+FPx9eKa20XY7MjuTuQ4JxV2If56t2AdwGii&#13;
-RjfICM7BEd2xCmqdqbzAdVXTcrjAuE2TgARb0RQJ3TRGOhQNkhGXmNjH7ZmHjvLEDyl/pCPUjvXi&#13;
-O8XOmE+VNyCzlj9EC5lTOOCa4MI7W16PehrC8RJkiY1uck3k/7zVys4+bn6k8++MJvSsIT93Uisz&#13;
-MWG3nvkWqFR3e4vppi50Q9Y/EAcPJMNq+PiJyv/6chh1PqD5GQU6lMHvUqc3VvCr3/AHu+zsiomB&#13;
-weMePZgjvuv1EBwpuL6zPrd0a09epbac3MHmCw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ae47af5f-1f8d-400a-ae04-89614ffd33a5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zGYlPoFF8vItVKjeKyDHAD4Zj/qCZHky1xkbaNYkNczPFeoNCQ2Ljf8jTfod56wBv2aB7eFdfEm4&#13;
+8dBAdHzHaw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ad14206b-72b7-4b14-aee0-27992b447fb8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>u7/WXwKpGAVLkhVoVeBnogWyHXxLQDyRIWBeCh6En9X7Q3KwfnNMu2LYpACcwA0KvU2Ufq7vaZCr&#13;
+j4HQrHWDeA==</DigestValue></Reference></SignedInfo><SignatureValue>M6TLmpxXPjylPfHQJHLPz6hO7UgxqeAUuqaqgU+cXnFc5V4DtGCqRADw27rCasTrud1RonqAr3cU&#13;
+aKZILAJ5mezapHa9UVvnXPBDdIPkYqd9Wm7hqy4TDMkecBipcy0qIFU0RHyLluBNlPBVgkDMa1OH&#13;
+7ef+8DDxh5PFFKaGe/3nd2fkTcmZbuHnoDz4k3Q3D4L0U97LmPM1rampwbNAXiKAYXjmQl/nw4FY&#13;
+vbewogVT3bespoO3zZJk60ZosAI+v7E/cGM1u7Ff/QK9z08/GbI25xfoFoxy04bs3fJDSFjetjTJ&#13;
+XnnbtSzT7LcrGgt14qVEGW/BRSFGnWEChDonTA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1128,4 +1126,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_15360a62-712b-4890-b6d0-58a5ec23179c" Target="#_77c463a1-f4cb-43c8-ae8b-85d68d4b462b"><Timestamp>2023-09-28 06:54:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ad14206b-72b7-4b14-aee0-27992b447fb8" Target="#_ae47af5f-1f8d-400a-ae04-89614ffd33a5"><Timestamp>2023-09-28 06:54:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
