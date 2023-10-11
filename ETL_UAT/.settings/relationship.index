@@ -179,6 +179,25 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_H4K7sF3WEe6Lrfm36OpVVw",
+    "version" : "0.6",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_M4qaAFwpEe6rG-jalNJv9w",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "ETL_UAT:_AHDIwF3WEe6Lrfm36OpVVw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "ETL_UAT:_sIYXcGNSEe684J3fK1s7Zw",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_Irsf0F3VEe6Lrfm36OpVVw",
     "version" : "0.1",
     "type" : "job"
