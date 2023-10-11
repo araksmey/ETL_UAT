@@ -13,6 +13,10 @@
     "version" : "Latest",
     "type" : "job"
   }, {
+    "id" : "ETL_UAT:_ObeVMGfdEe653KAgSOH71w",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
     "id" : "ETL_UAT:_WYwpkF3REe6Lrfm36OpVVw",
     "version" : "Latest",
     "type" : "job"
