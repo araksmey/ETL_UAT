@@ -40,6 +40,10 @@
     "version" : "Latest",
     "type" : "job"
   }, {
+    "id" : "ETL_UAT:_DvDMcGvHEe6qfqMwWAI_wA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
     "id" : "ETL_UAT:_Irsf0F3VEe6Lrfm36OpVVw",
     "version" : "Latest",
     "type" : "job"
