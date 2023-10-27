@@ -27,7 +27,7 @@
   <orgomg.cwm.resource.relational:Schema dataManager="_oSwqwHSrEe6fbq7dW0Po9Q" name="DVF" xmi:id="_ogm5iHSrEe6fbq7dW0Po9Q"/>
   <orgomg.cwm.resource.relational:Schema dataManager="_oSwqwHSrEe6fbq7dW0Po9Q" name="DVSYS" xmi:id="_ogm5iXSrEe6fbq7dW0Po9Q"/>
   <orgomg.cwm.resource.relational:Schema dataManager="_oSwqwHSrEe6fbq7dW0Po9Q" name="DWH" xmi:id="_ogm5inSrEe6fbq7dW0Po9Q">
-    <ownedElement attachedCDC="true" id="_uigKgHSrEe6fbq7dW0Po9Q" label="APP_LOGS" name="APP_LOGS" tableType="TABLE" xmi:id="_uimRIHSrEe6fbq7dW0Po9Q" xsi:type="relational:TdTable">
+    <ownedElement id="_uigKgHSrEe6fbq7dW0Po9Q" label="APP_LOGS" name="APP_LOGS" tableType="TABLE" xmi:id="_uimRIHSrEe6fbq7dW0Po9Q" xsi:type="relational:TdTable">
       <feature key="true" label="ID" length="10" name="ID" nullable="false" sourceType="NUMBER" talendType="id_BigDecimal" xmi:id="_uimRIXSrEe6fbq7dW0Po9Q" xsi:type="relational:TdColumn">
         <taggedValue tag="Comment" value="" xmi:id="_uimRInSrEe6fbq7dW0Po9Q"/>
         <initialValue body="DWH&quot;.&quot;ISEQ$$_130336&quot;.nextval" language="COLUMN_DEF" xmi:id="_uimRI3SrEe6fbq7dW0Po9Q" xsi:type="relational:TdExpression"/>
@@ -114,13 +114,13 @@
   <orgomg.cwm.resource.relational:Schema dataManager="_oSwqwHSrEe6fbq7dW0Po9Q" name="XDB" xmi:id="_ogm5pXSrEe6fbq7dW0Po9Q"/>
   <orgomg.cwm.resource.relational:Schema dataManager="_oSwqwHSrEe6fbq7dW0Po9Q" name="XS$NULL" xmi:id="_ogm5pnSrEe6fbq7dW0Po9Q"/>
   <orgomg.cwm.resource.relational:Schema dataManager="_oSwqwHSrEe6fbq7dW0Po9Q" name="XSTREAMDB" xmi:id="_ogm5p3SrEe6fbq7dW0Po9Q"/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9f0ba152-bacc-4eaa-98a9-431460f30d2b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tY6YuKwCLVcqcPZIkBqcENR4kXZc7pudd+sM49nfuznsnWVzhD2gxa63vs2N5UHnA0Co381nLw6m&#13;
-RiN/JkTQBg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_eccba918-ed0d-4073-a8fc-3655d5514e9b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Qi3lbnYXhE1SsKkOLbC710MvVFxVzSo8QCZMTJrLUEeVtMlBVogwVEI9ljFaIjKwFCVdrZkWhdjx&#13;
-ZzHULyT+fA==</DigestValue></Reference></SignedInfo><SignatureValue>o4jG3pduSHZ21klkvTTpzMJLI8S1RAdyXJQzeVYBtnlZ3CCjUrTySquHsoswsU+4V6XzShvVFgpI&#13;
-7Vjj69FgxagdgtjvSc7DFLBmlbvvVTFbWkCm0YoBn/kyu82EtmPduSGhUl9Fwwspxk2Hf8O/CwIM&#13;
-LwSJjPJiCZz/EaPX8Um+/beuQiAAHc6ifF7Dy6dejrIsY1f8mY+m2Tz2etgaxWqGoQrK/05cSsCi&#13;
-G9ZPnb25ndAMt3s/Mkr72jxRQ/GOkC8CAN4eLpbTB/3nDoYIre4B2K76wVnQgP0ijidjlWOBYFl2&#13;
-23wIKkcB8aax2Vb3OqNpMdTIPaHZtvv4IipNxg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_34669fb0-893a-4d4e-8460-8df2d6fdaf82"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9YnJaFcLeEjsFGNuKT24Yy9Gm/cEfM0nzi7S6hd0ObIaZEUK7IXCj21CVwxWZTeLPwtoOZXrQ3jw&#13;
+U/c1Sz5nqA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_00d0f23d-c364-4e67-9e83-e6ce6825233c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1bYpgaFCPl+aAVRZVYQ+YFtGTWWleOvdfF0h/yoyQ/Aroy8HjFhNjUSVaQufheQBVhUe5W8Jzppj&#13;
+OUtmQ3j4WA==</DigestValue></Reference></SignedInfo><SignatureValue>lMWzxdXJTLCA/5ucZn+2ovxQr/s5NwcRYwa9mWfkWPBRULq/t9x04kYWVyRzJPkmmqw5gALj9PhV&#13;
+HDAtKZuAjWuXjc/i5yi46yzqQ7a//EmhHTVdx0v++8F84UI6qgzISfbG2gE64rr0D1znU8Z5Yid6&#13;
+FFsZUTYa9nwRPAiAxXmPyjrE0SyR7MC5x8Fcwdvo6k/lho2dvHRfAE9PWed4eejJpA50BlNTgH/j&#13;
+neCTdRbT6Hj/c8J/uAkhY9k1Vhet4eOeZgpDHJbvWmDYsaA0JSClm+S3FZCwu0x2ZUuO+LfVc/cj&#13;
+3FbjixZ0mWZmwDioHDTMGRXGmuxZTjybi03Nqw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -142,4 +142,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_eccba918-ed0d-4073-a8fc-3655d5514e9b" Target="#_9f0ba152-bacc-4eaa-98a9-431460f30d2b"><Timestamp>2023-10-27 09:34:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_00d0f23d-c364-4e67-9e83-e6ce6825233c" Target="#_34669fb0-893a-4d4e-8460-8df2d6fdaf82"><Timestamp>2023-10-27 09:34:34</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
