@@ -8,6 +8,14 @@
     "id" : "_MxasEHSfEe67xZWJb0VVfg",
     "version" : "Latest",
     "type" : "property"
+  }, {
+    "id" : "_ZdPgoHSuEe6fbq7dW0Po9Q",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_ZdPgoHSuEe6fbq7dW0Po9Q - APP_LOGS_BK",
+    "version" : "Latest",
+    "type" : "schema"
   } ]
 }, {
   "baseItem" : {
