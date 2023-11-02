@@ -47,7 +47,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:t4R5iOjjSdYiXFhd4B5zP15CJEIYG7KSr6I3rX/x"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:lruLTLvzmPsyzrsWLTRsidQndwl/oL9ZZzBnXJDa"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -82,7 +82,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:SGYaxp9ZnOkcxZl+UxM+5PhgGrSnfKDRwAfUcaGS"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:AGtQe13cragDBmKUcbdVDuHuRr2j4ictqwuZrJHs"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -125,7 +125,7 @@
     <elementParameter field="CLOSED_LIST" name="KAFKA_VERSION" value="KAFKA_3_2_3"/>
     <elementParameter field="TEXT" name="ZOOKEEPER_CONNECT" show="false" value="&quot;zk1:port1,zk2:port2,...&quot;"/>
     <elementParameter field="TEXT" name="BROKER_LIST" value="context.broker_list"/>
-    <elementParameter field="TEXT" name="KAFKA_TOPIC" value="&quot;PSP_&quot;"/>
+    <elementParameter field="TEXT" name="KAFKA_TOPIC" value="&quot;PSP_MTX_TRANSACTION_HEADER&quot;"/>
     <elementParameter field="TEXT" name="GROUP_ID" value="context.group_id"/>
     <elementParameter field="CHECK" name="RESET_OFFSET" value="false"/>
     <elementParameter field="CLOSED_LIST" name="AUTO_OFFSET_RESET" show="false" value="LARGEST"/>
@@ -186,7 +186,195 @@
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRANSACTION_DATE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="APPLICATION_ID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GEO_DOMAIN_ID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ERROR_CODE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOGIN_ATTEMPTS"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRANSACTION_STATUS"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REQUEST_GATEWAY_ID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_TYPE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REFERENCE_NUMBER"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXT_TRANSACTION_ID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXT_TRANSACTION_DATE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_ID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_DATE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_CLOSE_DATE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_CHARGE_DETAILSID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRANSFER_RULE_ID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_CHARGE_RULE_ID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_1_NAME"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_1_VALUE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_2_NAME"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_2_VALUE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_3_NAME"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_3_VALUE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CREATED_BY"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CREATED_ON"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODIFIED_BY"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MODIFIED_ON"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_CHARGE_SET_VERSION"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TCY_CURRENCY_ID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CCY_CURRENCY_ID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_SUB_TYPE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PASSCODE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_CHARGE_SET_ID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REQUEST_MSISDN"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CURRENCY_CONV_ID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USD_EQUIVALANT"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REQUESTED_VALUE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRANSFER_VALUE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_SERVICE_CHARGE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_TAXES"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_OPT_SERVICE_CHARGE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TXN_CONVERTED_VALUE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHANNEL_COMM"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CASH"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_4_NAME"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_4_VALUE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRN_REF_NO"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_CODE"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
@@ -194,8 +382,102 @@
     <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
       <elementValue elementRef="SCHEMA_COLUMN" value="TRANSACTION_ID"/>
       <elementValue elementRef="QUERY" value="&quot;$.TRANSACTION_ID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRANSACTION_DATE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.TRANSACTION_DATE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="APPLICATION_ID"/>
+      <elementValue elementRef="QUERY" value="&quot;$.APPLICATION_ID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GEO_DOMAIN_ID"/>
+      <elementValue elementRef="QUERY" value="&quot;$.GEO_DOMAIN_ID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ERROR_CODE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.ERROR_CODE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOGIN_ATTEMPTS"/>
+      <elementValue elementRef="QUERY" value="&quot;$.LOGIN_ATTEMPTS&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRANSACTION_STATUS"/>
+      <elementValue elementRef="QUERY" value="&quot;$.TRANSACTION_STATUS&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REQUEST_GATEWAY_ID"/>
+      <elementValue elementRef="QUERY" value="&quot;$.REQUEST_GATEWAY_ID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_TYPE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.SERVICE_TYPE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REFERENCE_NUMBER"/>
+      <elementValue elementRef="QUERY" value="&quot;$.REFERENCE_NUMBER&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXT_TRANSACTION_ID"/>
+      <elementValue elementRef="QUERY" value="&quot;$.EXT_TRANSACTION_ID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXT_TRANSACTION_DATE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.EXT_TRANSACTION_DATE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_ID"/>
+      <elementValue elementRef="QUERY" value="&quot;$.BATCH_ID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_DATE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.BATCH_DATE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_CLOSE_DATE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.BATCH_CLOSE_DATE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_CHARGE_DETAILSID"/>
+      <elementValue elementRef="QUERY" value="&quot;$.SERVICE_CHARGE_DETAILSID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRANSFER_RULE_ID"/>
+      <elementValue elementRef="QUERY" value="&quot;$.TRANSFER_RULE_ID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_CHARGE_RULE_ID"/>
+      <elementValue elementRef="QUERY" value="&quot;$.SERVICE_CHARGE_RULE_ID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_1_NAME"/>
+      <elementValue elementRef="QUERY" value="&quot;$.ATTR_1_NAME&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_1_VALUE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.ATTR_1_VALUE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_2_NAME"/>
+      <elementValue elementRef="QUERY" value="&quot;$.ATTR_2_NAME&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_2_VALUE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.ATTR_2_VALUE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_3_NAME"/>
+      <elementValue elementRef="QUERY" value="&quot;$.ATTR_3_NAME&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_3_VALUE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.ATTR_3_VALUE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CREATED_BY"/>
+      <elementValue elementRef="QUERY" value="&quot;$.CREATED_BY&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CREATED_ON"/>
+      <elementValue elementRef="QUERY" value="&quot;$.CREATED_ON&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODIFIED_BY"/>
+      <elementValue elementRef="QUERY" value="&quot;$.MODIFIED_BY&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MODIFIED_ON"/>
       <elementValue elementRef="QUERY" value="&quot;$.MODIFIED_ON&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_CHARGE_SET_VERSION"/>
+      <elementValue elementRef="QUERY" value="&quot;$.SERVICE_CHARGE_SET_VERSION&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TCY_CURRENCY_ID"/>
+      <elementValue elementRef="QUERY" value="&quot;$.TCY_CURRENCY_ID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CCY_CURRENCY_ID"/>
+      <elementValue elementRef="QUERY" value="&quot;$.CCY_CURRENCY_ID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_SUB_TYPE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.SERVICE_SUB_TYPE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PASSCODE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.PASSCODE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_CHARGE_SET_ID"/>
+      <elementValue elementRef="QUERY" value="&quot;$.SERVICE_CHARGE_SET_ID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REQUEST_MSISDN"/>
+      <elementValue elementRef="QUERY" value="&quot;$.REQUEST_MSISDN&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CURRENCY_CONV_ID"/>
+      <elementValue elementRef="QUERY" value="&quot;$.CURRENCY_CONV_ID&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USD_EQUIVALANT"/>
+      <elementValue elementRef="QUERY" value="&quot;$.USD_EQUIVALANT&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REQUESTED_VALUE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.REQUESTED_VALUE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRANSFER_VALUE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.TRANSFER_VALUE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_SERVICE_CHARGE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.TOTAL_SERVICE_CHARGE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_TAXES"/>
+      <elementValue elementRef="QUERY" value="&quot;$.TOTAL_TAXES&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_OPT_SERVICE_CHARGE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.TOTAL_OPT_SERVICE_CHARGE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TXN_CONVERTED_VALUE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.TXN_CONVERTED_VALUE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHANNEL_COMM"/>
+      <elementValue elementRef="QUERY" value="&quot;$.CHANNEL_COMM&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CASH"/>
+      <elementValue elementRef="QUERY" value="&quot;$.CASH&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_4_NAME"/>
+      <elementValue elementRef="QUERY" value="&quot;$.ATTR_4_NAME&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_4_VALUE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.ATTR_4_VALUE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRN_REF_NO"/>
+      <elementValue elementRef="QUERY" value="&quot;$.TRN_REF_NO&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_CODE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.PRODUCT_CODE"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -206,12 +488,106 @@
     <elementParameter field="CHECK" name="SPLIT_LIST" show="false" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tExtractJSONFields_1">
-      <column comment="" key="false" length="-1" name="TRANSACTION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MODIFIED_ON" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSACTION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSACTION_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="APPLICATION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GEO_DOMAIN_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ERROR_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOGIN_ATTEMPTS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSACTION_STATUS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REQUEST_GATEWAY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REFERENCE_NUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXT_TRANSACTION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXT_TRANSACTION_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BATCH_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BATCH_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BATCH_CLOSE_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_DETAILSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSFER_RULE_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_RULE_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_1_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_1_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_2_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_2_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_3_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_3_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CREATED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CREATED_ON" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODIFIED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODIFIED_ON" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_SET_VERSION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TCY_CURRENCY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CCY_CURRENCY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_SUB_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PASSCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_SET_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REQUEST_MSISDN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CURRENCY_CONV_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="USD_EQUIVALANT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REQUESTED_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSFER_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_SERVICE_CHARGE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_TAXES" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_OPT_SERVICE_CHARGE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TXN_CONVERTED_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CHANNEL_COMM" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CASH" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_4_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_4_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRN_REF_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODUCT_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="-1" name="TRANSACTION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MODIFIED_ON" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSACTION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSACTION_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="APPLICATION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GEO_DOMAIN_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ERROR_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOGIN_ATTEMPTS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSACTION_STATUS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REQUEST_GATEWAY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REFERENCE_NUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXT_TRANSACTION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXT_TRANSACTION_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BATCH_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BATCH_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BATCH_CLOSE_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_DETAILSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSFER_RULE_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_RULE_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_1_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_1_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_2_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_2_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_3_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_3_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CREATED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CREATED_ON" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODIFIED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODIFIED_ON" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_SET_VERSION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TCY_CURRENCY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CCY_CURRENCY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_SUB_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PASSCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_SET_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REQUEST_MSISDN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CURRENCY_CONV_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="USD_EQUIVALANT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REQUESTED_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSFER_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_SERVICE_CHARGE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_TAXES" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_OPT_SERVICE_CHARGE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TXN_CONVERTED_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CHANNEL_COMM" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CASH" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_4_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_4_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRN_REF_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODUCT_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -232,21 +608,167 @@
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out1">
-      <column comment="" key="false" length="-1" name="TRANSACTION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MODIFIED_ON" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSACTION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSACTION_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="APPLICATION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GEO_DOMAIN_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ERROR_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOGIN_ATTEMPTS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSACTION_STATUS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REQUEST_GATEWAY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REFERENCE_NUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXT_TRANSACTION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXT_TRANSACTION_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BATCH_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BATCH_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BATCH_CLOSE_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_DETAILSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSFER_RULE_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_RULE_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_1_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_1_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_2_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_2_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_3_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_3_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CREATED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CREATED_ON" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODIFIED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODIFIED_ON" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_SET_VERSION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TCY_CURRENCY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CCY_CURRENCY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_SUB_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PASSCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_SET_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REQUEST_MSISDN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CURRENCY_CONV_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="USD_EQUIVALANT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REQUESTED_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSFER_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_SERVICE_CHARGE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_TAXES" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_OPT_SERVICE_CHARGE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TXN_CONVERTED_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CHANNEL_COMM" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CASH" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_4_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_4_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRN_REF_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODUCT_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
       <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row3.MODIFIED_ON == null?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date(((long)(row3.MODIFIED_ON)) - 25200000)), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="TRANSACTION_DATE" type="id_Date"/>
+        <mapperTableEntries expression="row3.TRANSACTION_DATE == null?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date(((long)(row3.TRANSACTION_DATE)) - 25200000)), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="txn_date" type="id_Date"/>
+        <mapperTableEntries expression="row3.EXT_TRANSACTION_DATE == null?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date(((long)(row3.EXT_TRANSACTION_DATE)) - 25200000)), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="ext_txn_date" type="id_Date"/>
+        <mapperTableEntries expression="row3.BATCH_DATE == null?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date(((long)(row3.BATCH_DATE)) - 25200000)), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="batch_date" type="id_Date"/>
+        <mapperTableEntries expression="row3.BATCH_CLOSE_DATE == null?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date(((long)(row3.BATCH_CLOSE_DATE)) - 25200000)), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="batch_close_date" type="id_Date"/>
+        <mapperTableEntries expression="row3.CREATED_ON == null?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date(((long)(row3.CREATED_ON)) - 25200000)), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="created_on" type="id_String"/>
+        <mapperTableEntries expression="row3.MODIFIED_ON == null?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date(((long)(row3.MODIFIED_ON)) - 25200000)), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="modified_on" type="id_Date"/>
       </varTables>
       <outputTables name="out1" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row3.TRANSACTION_ID " name="TRANSACTION_ID" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="Var.TRANSACTION_DATE " name="MODIFIED_ON" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="Var.txn_date " name="TRANSACTION_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.APPLICATION_ID " name="APPLICATION_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.GEO_DOMAIN_ID " name="GEO_DOMAIN_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ERROR_CODE " name="ERROR_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.LOGIN_ATTEMPTS " name="LOGIN_ATTEMPTS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.TRANSACTION_STATUS " name="TRANSACTION_STATUS" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.REQUEST_GATEWAY_ID " name="REQUEST_GATEWAY_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.SERVICE_TYPE " name="SERVICE_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.REFERENCE_NUMBER " name="REFERENCE_NUMBER" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.EXT_TRANSACTION_ID " name="EXT_TRANSACTION_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.ext_txn_date " name="EXT_TRANSACTION_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.BATCH_ID " name="BATCH_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.batch_date " name="BATCH_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="Var.batch_close_date " name="BATCH_CLOSE_DATE" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.SERVICE_CHARGE_DETAILSID " name="SERVICE_CHARGE_DETAILSID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.TRANSFER_RULE_ID " name="TRANSFER_RULE_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.SERVICE_CHARGE_RULE_ID " name="SERVICE_CHARGE_RULE_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ATTR_1_NAME " name="ATTR_1_NAME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ATTR_1_VALUE " name="ATTR_1_VALUE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ATTR_2_NAME " name="ATTR_2_NAME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ATTR_2_VALUE " name="ATTR_2_VALUE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ATTR_3_NAME " name="ATTR_3_NAME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ATTR_3_VALUE " name="ATTR_3_VALUE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.CREATED_BY " name="CREATED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.created_on " name="CREATED_ON" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.MODIFIED_BY " name="MODIFIED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="Var.modified_on " name="MODIFIED_ON" nullable="true" type="id_Date"/>
+        <mapperTableEntries expression="row3.SERVICE_CHARGE_SET_VERSION " name="SERVICE_CHARGE_SET_VERSION" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.TCY_CURRENCY_ID " name="TCY_CURRENCY_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.CCY_CURRENCY_ID " name="CCY_CURRENCY_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.SERVICE_SUB_TYPE " name="SERVICE_SUB_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PASSCODE " name="PASSCODE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.SERVICE_CHARGE_SET_ID " name="SERVICE_CHARGE_SET_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.REQUEST_MSISDN " name="REQUEST_MSISDN" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.CURRENCY_CONV_ID " name="CURRENCY_CONV_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.USD_EQUIVALANT " name="USD_EQUIVALANT" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.REQUESTED_VALUE " name="REQUESTED_VALUE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.TRANSFER_VALUE " name="TRANSFER_VALUE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.TOTAL_SERVICE_CHARGE " name="TOTAL_SERVICE_CHARGE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.TOTAL_TAXES " name="TOTAL_TAXES" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.TOTAL_OPT_SERVICE_CHARGE " name="TOTAL_OPT_SERVICE_CHARGE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.TXN_CONVERTED_VALUE " name="TXN_CONVERTED_VALUE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.CHANNEL_COMM " name="CHANNEL_COMM" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.CASH " name="CASH" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ATTR_4_NAME " name="ATTR_4_NAME" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.ATTR_4_VALUE " name="ATTR_4_VALUE" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.TRN_REF_NO " name="TRN_REF_NO" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.PRODUCT_CODE " name="PRODUCT_CODE" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
         <mapperTableEntries name="TRANSACTION_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TRANSACTION_DATE" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="APPLICATION_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="GEO_DOMAIN_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ERROR_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="LOGIN_ATTEMPTS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TRANSACTION_STATUS" nullable="true" type="id_String"/>
+        <mapperTableEntries name="REQUEST_GATEWAY_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SERVICE_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="REFERENCE_NUMBER" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EXT_TRANSACTION_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="EXT_TRANSACTION_DATE" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="BATCH_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BATCH_DATE" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="BATCH_CLOSE_DATE" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="SERVICE_CHARGE_DETAILSID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TRANSFER_RULE_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SERVICE_CHARGE_RULE_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ATTR_1_NAME" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ATTR_1_VALUE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ATTR_2_NAME" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ATTR_2_VALUE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ATTR_3_NAME" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ATTR_3_VALUE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CREATED_BY" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CREATED_ON" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="MODIFIED_BY" nullable="true" type="id_String"/>
         <mapperTableEntries name="MODIFIED_ON" nullable="true" type="id_Long"/>
+        <mapperTableEntries name="SERVICE_CHARGE_SET_VERSION" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TCY_CURRENCY_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CCY_CURRENCY_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SERVICE_SUB_TYPE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PASSCODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="SERVICE_CHARGE_SET_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="REQUEST_MSISDN" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CURRENCY_CONV_ID" nullable="true" type="id_String"/>
+        <mapperTableEntries name="USD_EQUIVALANT" nullable="true" type="id_String"/>
+        <mapperTableEntries name="REQUESTED_VALUE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TRANSFER_VALUE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TOTAL_SERVICE_CHARGE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TOTAL_TAXES" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TOTAL_OPT_SERVICE_CHARGE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TXN_CONVERTED_VALUE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CHANNEL_COMM" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CASH" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ATTR_4_NAME" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ATTR_4_VALUE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="TRN_REF_NO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PRODUCT_CODE" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
@@ -266,11 +788,11 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;MDWH&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;STAGING&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;STAGING&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YAx6C6dgScT4QKIdcR6tYyBfE9ZNFRquj3ZQzKf/Li/ynVJyI5v3SF29JiWZ"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:N6XcwASewZ1zsqci65D1JQtM0R6qpVNVtz6Ck9NRyRQO+/PYBwJRYZBvn7lQ"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;REALTIME_MTX_TRANSACTION_HEADER&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
-    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -292,7 +814,242 @@
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
       <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRANSACTION_DATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="APPLICATION_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GEO_DOMAIN_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ERROR_CODE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LOGIN_ATTEMPTS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRANSACTION_STATUS"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REQUEST_GATEWAY_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_TYPE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REFERENCE_NUMBER"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXT_TRANSACTION_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EXT_TRANSACTION_DATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_DATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_CLOSE_DATE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_CHARGE_DETAILSID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRANSFER_RULE_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_CHARGE_RULE_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_1_NAME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_1_VALUE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_2_NAME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_2_VALUE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_3_NAME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_3_VALUE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CREATED_BY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CREATED_ON"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODIFIED_BY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="MODIFIED_ON"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_CHARGE_SET_VERSION"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TCY_CURRENCY_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CCY_CURRENCY_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_SUB_TYPE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PASSCODE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SERVICE_CHARGE_SET_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REQUEST_MSISDN"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CURRENCY_CONV_ID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="USD_EQUIVALANT"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="REQUESTED_VALUE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRANSFER_VALUE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_SERVICE_CHARGE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_TAXES"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TOTAL_OPT_SERVICE_CHARGE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TXN_CONVERTED_VALUE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHANNEL_COMM"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CASH"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_4_NAME"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ATTR_4_VALUE"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRN_REF_NO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_CODE"/>
       <elementValue elementRef="UPDATE_KEY" value="false"/>
       <elementValue elementRef="DELETE_KEY" value="false"/>
       <elementValue elementRef="UPDATABLE" value="true"/>
@@ -303,9 +1060,9 @@
     <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
     <elementParameter field="CHECK" name="CONTAIN_BLOB_FROM_OTHER_DB" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
-    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
     <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" show="false" value="false"/>
-    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
     <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
@@ -313,12 +1070,106 @@
     <elementParameter field="TEXT" name="LABEL" value="MSTAGING"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
-      <column comment="" key="false" length="-1" name="TRANSACTION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MODIFIED_ON" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="TRANSACTION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSACTION_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="APPLICATION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GEO_DOMAIN_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ERROR_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOGIN_ATTEMPTS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSACTION_STATUS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REQUEST_GATEWAY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REFERENCE_NUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXT_TRANSACTION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXT_TRANSACTION_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BATCH_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BATCH_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BATCH_CLOSE_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_DETAILSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSFER_RULE_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_RULE_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_1_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_1_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_2_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_2_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_3_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_3_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CREATED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CREATED_ON" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODIFIED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODIFIED_ON" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_SET_VERSION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TCY_CURRENCY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CCY_CURRENCY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_SUB_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PASSCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_SET_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REQUEST_MSISDN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CURRENCY_CONV_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="USD_EQUIVALANT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REQUESTED_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSFER_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_SERVICE_CHARGE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_TAXES" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_OPT_SERVICE_CHARGE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TXN_CONVERTED_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CHANNEL_COMM" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CASH" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_4_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_4_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRN_REF_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODUCT_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="-1" name="TRANSACTION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MODIFIED_ON" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="TRANSACTION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSACTION_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="APPLICATION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GEO_DOMAIN_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ERROR_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LOGIN_ATTEMPTS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSACTION_STATUS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REQUEST_GATEWAY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REFERENCE_NUMBER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXT_TRANSACTION_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EXT_TRANSACTION_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BATCH_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BATCH_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="BATCH_CLOSE_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_DETAILSID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSFER_RULE_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_RULE_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_1_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_1_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_2_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_2_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_3_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_3_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CREATED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CREATED_ON" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODIFIED_BY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODIFIED_ON" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_SET_VERSION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TCY_CURRENCY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CCY_CURRENCY_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_SUB_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PASSCODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SERVICE_CHARGE_SET_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REQUEST_MSISDN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CURRENCY_CONV_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="USD_EQUIVALANT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="REQUESTED_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRANSFER_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_SERVICE_CHARGE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_TAXES" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TOTAL_OPT_SERVICE_CHARGE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TXN_CONVERTED_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CHANNEL_COMM" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CASH" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_4_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="ATTR_4_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TRN_REF_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODUCT_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
     </metadata>
@@ -1061,6 +1912,138 @@
       <elementValue elementRef="TRACE_COLUMN" value="MODIFIED_ON"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BATCH_CLOSE_DATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MODIFIED_BY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="APPLICATION_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TRANSFER_RULE_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TRANSFER_VALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EXT_TRANSACTION_DATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BATCH_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_1_NAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_4_VALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REQUEST_MSISDN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TOTAL_OPT_SERVICE_CHARGE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_4_NAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRODUCT_CODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ERROR_CODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TRANSACTION_STATUS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TOTAL_TAXES"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BATCH_DATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PASSCODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REQUESTED_VALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TOTAL_SERVICE_CHARGE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TXN_CONVERTED_VALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TCY_CURRENCY_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SERVICE_CHARGE_SET_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="USD_EQUIVALANT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_2_VALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SERVICE_CHARGE_DETAILSID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CREATED_BY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GEO_DOMAIN_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_2_NAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CURRENCY_CONV_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REFERENCE_NUMBER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SERVICE_CHARGE_RULE_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHANNEL_COMM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CASH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_3_NAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REQUEST_GATEWAY_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_1_VALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TRN_REF_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CREATED_ON"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_3_VALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SERVICE_CHARGE_SET_VERSION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LOGIN_ATTEMPTS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EXT_TRANSACTION_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CCY_CURRENCY_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
@@ -1799,6 +2782,138 @@
       <elementValue elementRef="TRACE_COLUMN" value="MODIFIED_ON"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BATCH_CLOSE_DATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MODIFIED_BY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="APPLICATION_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TRANSFER_RULE_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TRANSFER_VALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EXT_TRANSACTION_DATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BATCH_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_1_NAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_4_VALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REQUEST_MSISDN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TOTAL_OPT_SERVICE_CHARGE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_4_NAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PRODUCT_CODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ERROR_CODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TRANSACTION_STATUS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TOTAL_TAXES"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="BATCH_DATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PASSCODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REQUESTED_VALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TOTAL_SERVICE_CHARGE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TXN_CONVERTED_VALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TCY_CURRENCY_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SERVICE_CHARGE_SET_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="USD_EQUIVALANT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_2_VALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SERVICE_CHARGE_DETAILSID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CREATED_BY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GEO_DOMAIN_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_2_NAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CURRENCY_CONV_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REFERENCE_NUMBER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SERVICE_CHARGE_RULE_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHANNEL_COMM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CASH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_3_NAME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="REQUEST_GATEWAY_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_1_VALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TRN_REF_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CREATED_ON"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ATTR_3_VALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SERVICE_CHARGE_SET_VERSION"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LOGIN_ATTEMPTS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EXT_TRANSACTION_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CCY_CURRENCY_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
@@ -1808,13 +2923,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c942c19f-66c7-41ff-968b-7fb10ae81e55"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QRgL1dCqt7mlaAB1DR8KUAjTTQxFkkDtjIggKHJJFe4eXIXyOlkx1l0OjxUP21jZ6wSKPtH4eGfI&#13;
-QejzIar3IQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c401eff8-a219-4ae2-b13b-14592137a40d"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PcBzbK8M4xmFydazy0hmZvElX233YGSxXM4FOF/Pbw5706hS04bTuPLWa++MnumIxErLQv0ae4Uh&#13;
-uXi3VupSyA==</DigestValue></Reference></SignedInfo><SignatureValue>BQ9Y6mbr533dOdNhhONtkJ0zqMrW4i5wfQMZUeItWlOm5f59lDgzw7dUise3LqnT2Tuod5rAslrW&#13;
-Iv33bdCZ8ql1mgARnt8jhiGnq4dfd3S3psHq2AOtmV9Ud+gkHLJE3BoH9prgNXvzTcW9P/RbWw11&#13;
-F2ZXZmE93NP/nbSQv0jI4d/0yYpP5owuUHSp7vu8Q9Ul8/FkNYR0VZF8yZJLlusQt6tTxEWnPIGo&#13;
-yjACUohsqH1R3wfCxrScuxF/KpVfTVh30HXcS79XvhSq2akJjC+DYse6w+IAYCbVyMhMHmPcuKPd&#13;
-u83yIib5TQvGqIvkjDvzhO1d0OFEradFGu+zLA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b1bf0951-98dd-4ef4-a8a1-eb8724b4f688"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KBOucBz8GFUjmNJ9OirH07wtoA03NGnkQSo6pU2O1chbeBiTEPDUfEK+rk0BsFDfryaIiZolbuvf&#13;
+9kPDZleiIw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_222b06ba-a93d-43c7-b4eb-6817d3425c9c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YosSHWVKmXcNnDmifezf6LkyK7HqxJssMwp+IVqBlh2t6L3o4uAgZwmDl0on38gbKEIzx/xpVPmk&#13;
+rtG+x3vOGQ==</DigestValue></Reference></SignedInfo><SignatureValue>l2gy/5LPLc8BkiBOYT6HihaMUAVC42XluZFK4NM2lh5g39Pg0ZNKOHR0heKdbazVdQJysyQdkF/1&#13;
+XTbF4tTSkQhnX7OIJe+7661pWNFC51kuOdPOa28DKpB3KLPZqwKplxiF3GWb2PonlDa7orzJY8l4&#13;
+4GM37eNiqGDq2DcSNBmYuvU6XVkKO6gugDkl2QF4Vb46amvc+OEYjtYZokXqxl56FferXxR26OVo&#13;
+/Jsu7FEHTRBeeWO1KCso+5w95bx6EDHGARaJnSamvRGgv9U3I+gBViBta/WkYPT1rXAitNFGbOpj&#13;
+3F4OwNTi8E2IhnoBsjCCzZYrQqz20r6R9vrxsQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1836,4 +2951,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c401eff8-a219-4ae2-b13b-14592137a40d" Target="#_c942c19f-66c7-41ff-968b-7fb10ae81e55"><Timestamp>2023-10-12 07:37:17</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_222b06ba-a93d-43c7-b4eb-6817d3425c9c" Target="#_b1bf0951-98dd-4ef4-a8a1-eb8724b4f688"><Timestamp>2023-11-02 03:20:00</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
