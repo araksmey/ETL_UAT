@@ -2,6 +2,8 @@
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -41,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Q2oOY1WlgTof8Cbu27TFoWu4nrjRAzCaU8Rs3V0I"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Mt38QYPjNDYPRnh7GHxqcOlrC3A860U8zj8enVUr"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -76,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:wgA1UF2ottFXVd8ICnMB5IvbG1YyEmVQiAgbUdyK"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:DkbSuow5IyTLwuHsoBGApZ+HPXbfyxw1csYHuJkY"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -111,13 +113,92 @@
     <routinesParameter id="_e7EWABFrEe6R7NkxfWEiKA" name="TalendStringUtil"/>
     <routinesParameter id="_e7BSsBFrEe6R7NkxfWEiKA" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_a3cf5b32-8445-4fa1-a365-013c44c20157"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vi4RGKk0QSt/yuU2k+QTgNVQaRsMYPyGDnGgaXvAQNrgDgVD8KoVhWsfPChkwNaQQQG0imGML7Ac&#13;
-TsgfvsJ6ig==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7e0d29f3-83a8-47f9-8823-f4158f94d06f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PR3ELnohg0AXjnYH2NVhBqR6buQw80MmVBRCTcOgyMndCbLnhmOAY4ZiohUr/0msEkqk0iETYbw/&#13;
-r+Hv2IrC2g==</DigestValue></Reference></SignedInfo><SignatureValue>iLaOILXLmZiAY2DveyhndeoWtXwmHrrRzKkC9eWDyu8W1N6HpCDYf5m2mTNQbBpFvncc5KG8HDbO&#13;
-LAV4Vqbqr3rJ4WDRXQcrAy1m3iqiASpbc1ct81MlB4lIsknLJ1wkuHsmXuqeUdcDMmubxB0a2cbO&#13;
-SI+gw7yIAM2dang2kw79wIYwWo+csDLO73vvIzthPB7f9PIZVMIb6GujU114aSSxH3tOWBolQMsY&#13;
-jAvie7+3YUU1QfaOTblQTYq9R+WmCPklp6UpM6tUVY5c6V9Ci9R4nlzI5d8xk0BUOX2gpY1ecSOS&#13;
-vx5BJzPMEO2aPh637mqaBn4UsXvduI6cKxE9bg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <node componentName="tOracleCDC" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCDC_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_hlgIkHSrEe6fbq7dW0Po9Q"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_OCI"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_OCI"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;STAGDWH&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;STAGDWH&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;xstreamdb&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4viIqg9uKDroZ+LsGWa6VBnY3Knam5+9BALU3Ns+azw0ynSGL8mH"/>
+    <elementParameter field="CLOSED_LIST" name="CDC_MODE" value="XSTREAM"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATE_LCRTYPE" value="LCR_OBJECT"/>
+    <elementParameter field="DBTABLE" name="DATATABLE" value="&quot;STUNDENT&quot;"/>
+    <elementParameter field="TEXT" name="OUTBOUND_SERVER" value="&quot;XOUT_STUDENT&quot;"/>
+    <elementParameter field="CHECK" name="SET_DATA_TABLE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATA_TABLE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SUSCRIBER" show="false" value="&quot;APP1&quot;"/>
+    <elementParameter field="LABEL" name="EVENTS_TYPE" show="false" value=""/>
+    <elementParameter field="CHECK" name="EVENTS_TYPE_INSERT" show="false" value="true"/>
+    <elementParameter field="CHECK" name="EVENTS_TYPE_UPDATE" show="false" value="true"/>
+    <elementParameter field="CHECK" name="EVENTS_TYPE_DELETE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LIMIT" show="false" value="&quot;10000&quot;"/>
+    <elementParameter field="CHECK" name="KEEP_LISTENING" value="true"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="KEEP_CDC_DATAS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" show="false" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN" show="false"/>
+    <elementParameter field="TEXT" name="ACK_INTERVAL" value="30"/>
+    <elementParameter field="TEXT" name="IDLE_TIMEOUT" value="1"/>
+    <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBCDC_1">
+      <column defaultValue="" key="false" length="0" name="LCR_OBJECT" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleCDCOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCDCOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_ZdPgoHSuEe6fbq7dW0Po9Q"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" show="false" value="Oracle connection type should be Oracle OCI!"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_OCI"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;STAGDWH&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;dwh&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+cOmyk/sM6L5WGQbsVFZ3ih2d0XLFyFn46hh2qyZqQpXJufU2ezX"/>
+    <elementParameter field="COLUMN_LIST" name="INPUT_FIELD" value="LCR_OBJECT"/>
+    <elementParameter field="TEXT" name="INBOUND_SERVER" value="&quot;XIN_STUDENT&quot;"/>
+    <elementParameter field="CHECK" name="SET_DATA_TABLE_SCHEMA" value="true"/>
+    <elementParameter field="TEXT" name="DATA_TABLE_SCHEMA" value="&quot;DWH&quot;"/>
+    <elementParameter field="CHECK" name="SET_DATA_TABLE" value="true"/>
+    <elementParameter field="DBTABLE" name="DATATABLE" value="&quot;STUNDENT&quot;"/>
+    <elementParameter field="TEXT" name="ACK_INTERVAL" value="30"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBCDCOutput_1">
+      <column defaultValue="" key="false" length="0" name="LCR_OBJECT" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Object" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBCDC_1" offsetLabelX="0" offsetLabelY="0" source="tDBCDC_1" target="tDBCDCOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCDC_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_fdbdb0f6-bb94-4a1f-9eb0-b489f22d7333"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cW4fUMgjkqqiQbdMaa6wtfEM+cVV4LFI2jRzziD+sXUKfs6Y4Di23AMhnubyyq/7usNZtlseu0oj&#13;
+Oe2+UZO83Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cf84aa4c-3c65-4e1d-a9e9-04a51bfad7a1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dDlhBphWZchAKlJTs4+G7Rrrv0ss3itnOtUraS0PBMDiGn6Sf5YYnvfJw/aXqyub1W7PV3DiukNE&#13;
+GauOwXgY5g==</DigestValue></Reference></SignedInfo><SignatureValue>cZolyVV3iUuG6lwfbuk2yVW1Dg7d80ap6Gz6QA/NgSx1ccbodCxSFnwKPh5yBYdMs2ZCUhgYFkaK&#13;
+hXfLs16mp/qL7BvJbN1szfeqCoEXIX03PLShzFz9OEldzOaR3fhUkIgdblBprRJwnkT0cQbsMr9o&#13;
+RjfxyKPTJtvij3oJ52DwRIqC4A6Dk/PFtcZtNBdoKs1In35uNllD2sjFi0f7CwKMIFCzKgq7vLGV&#13;
+ivud4oF6poi+kRQKRECT1T4mT6x3l1p3tVAufUUC6Ithn25xSDCqq1r28wMlit7fm7bvpD2EpVOA&#13;
+r8o/D/uc0IAPlNXT6NDnYEaLXW661ThMmjCWag==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -139,4 +220,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7e0d29f3-83a8-47f9-8823-f4158f94d06f" Target="#_a3cf5b32-8445-4fa1-a365-013c44c20157"><Timestamp>2023-11-08 02:04:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cf84aa4c-3c65-4e1d-a9e9-04a51bfad7a1" Target="#_fdbdb0f6-bb94-4a1f-9eb0-b489f22d7333"><Timestamp>2023-11-08 02:14:04</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
