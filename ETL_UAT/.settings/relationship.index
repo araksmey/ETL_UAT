@@ -301,6 +301,21 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_AHDIwF3WEe6Lrfm36OpVVw",
+    "version" : "0.5",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "ETL_UAT:_4ymTcIm2Ee6Nuf2EHMKn5w",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "ETL_UAT:_AefBEIm3Ee6Nuf2EHMKn5w",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_AefBEIm3Ee6Nuf2EHMKn5w",
     "version" : "0.1",
     "type" : "job"
