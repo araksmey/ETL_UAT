@@ -46,7 +46,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:PvAiN0R6CkIvcFG0TAwXD3vbRlirl98oF9idyYJ8"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:KO7F+J0Q+/jlvOFOhcMbJk6OFhX0P+DQbU7mDeVG"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -81,7 +81,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:s7GgzP7rnd7PGJuWqXRSGnzj4qFEx6a2Vqtl9q7Y"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:NUtpTxUxSMRbSeIZCSdASBpx1v7j/+7a1+L6/EEW"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -181,263 +181,7 @@
     <elementParameter field="TEXT" name="LOOP_QUERY" show="false" value="&quot;/bills/bill/line&quot;"/>
     <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.payload&quot;"/>
     <elementParameter field="TABLE" name="MAPPING" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="MODULE"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="TRN_REF_NO"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EVENT_SR_NO"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EVENT"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AC_ENTRY_SR_NO"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AC_BRANCH"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AC_NO"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AC_CCY"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DRCR_IND"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TRN_CODE"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AMOUNT_TAG"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FCY_AMOUNT"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXCH_RATE"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LCY_AMOUNT"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RELATED_CUSTOMER"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RELATED_ACCOUNT"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RELATED_REFERENCE"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MIS_FLAG"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MIS_HEAD"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TRN_DT"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="VALUE_DT"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TXN_INIT_DATE"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FINANCIAL_CYCLE"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PERIOD_CODE"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INSTRUMENT_CODE"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_NO"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CURR_NO"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="USER_ID"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BANK_CODE"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AVLDAYS"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BALANCE_UPD"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTH_ID"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRINT_STAT"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTH_STAT"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CATEGORY"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_GL"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DISTRIBUTED"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NODE"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DELETE_STAT"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ON_LINE"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UPDACT"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NODE_SR_NO"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NETTING_IND"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IB"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FLG_POSITION_STATUS"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GLMIS_UPDATE_FLAG"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_ACCRUAL"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GLMIS_UPDATE_STATUS"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="VDBAL_UPDATE_FLAG"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GLMIS_VAL_UPD_FLAG"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXTERNAL_REF_NO"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROCESSED_FLAG"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MIS_SPREAD"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_GL_UPDATE"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DONT_SHOWIN_STMT"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IC_BAL_INCLUSION"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AML_EXCEPTION"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ORIG_PNL_GL"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STMT_DT"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ENTRY_SEQ_NO"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IL_BVT_PROCESSED"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="VIRTUAL_AC_NO"/>
-      <elementValue elementRef="QUERY" value=""/>
-      <elementValue elementRef="NODECHECK" value="false"/>
-      <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CLAIM_AMOUNT"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
@@ -445,194 +189,168 @@
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTH_TIMESTAMP"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONTRACT_REF_NO"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GRP_REF_NO"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VERSION_NO"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REL_EVENT_SR_NO"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODULE"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_PROCESSOR"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_CODE"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RELATED_AC_ENTRY_SR_NO"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_1"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DONT_SHOWIN_STMT_FEE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_2"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ORG_SOURCE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_3"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ORG_SOURCE_REF"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_4"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SOURCE_CODE"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_5"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_6"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_7"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_8"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_9"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_10"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_11"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_12"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_13"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_14"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_15"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_NAME"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VALUE"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_16"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_17"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_18"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_19"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="ISARRAY" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_20"/>
       <elementValue elementRef="QUERY" value=""/>
       <elementValue elementRef="NODECHECK" value="false"/>
       <elementValue elementRef="ISARRAY" value="false"/>
     </elementParameter>
     <elementParameter field="TABLE" name="MAPPING_4_JSONPATH">
-      <elementValue elementRef="SCHEMA_COLUMN" value="MODULE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.MODULE&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="TRN_REF_NO"/>
       <elementValue elementRef="QUERY" value="&quot;$.TRN_REF_NO&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EVENT_SR_NO"/>
-      <elementValue elementRef="QUERY" value="&quot;$.EVENT_SR_NO&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EVENT"/>
-      <elementValue elementRef="QUERY" value="&quot;$.EVENT&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AC_ENTRY_SR_NO"/>
-      <elementValue elementRef="QUERY" value="&quot;$.AC_ENTRY_SR_NO&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AC_BRANCH"/>
-      <elementValue elementRef="QUERY" value="&quot;$.AC_BRANCH&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AC_NO"/>
-      <elementValue elementRef="QUERY" value="&quot;$.AC_NO&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AC_CCY"/>
-      <elementValue elementRef="QUERY" value="&quot;$.AC_CCY&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DRCR_IND"/>
-      <elementValue elementRef="QUERY" value="&quot;$.DRCR_IND&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TRN_CODE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.TRN_CODE&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AMOUNT_TAG"/>
-      <elementValue elementRef="QUERY" value="&quot;$.AMOUNT_TAG&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FCY_AMOUNT"/>
-      <elementValue elementRef="QUERY" value="&quot;$.FCY_AMOUNT&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXCH_RATE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.EXCH_RATE&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="LCY_AMOUNT"/>
-      <elementValue elementRef="QUERY" value="&quot;$.LCY_AMOUNT&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RELATED_CUSTOMER"/>
-      <elementValue elementRef="QUERY" value="&quot;$.RELATED_CUSTOMER&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RELATED_ACCOUNT"/>
-      <elementValue elementRef="QUERY" value="&quot;$.RELATED_ACCOUNT&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RELATED_REFERENCE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.RELATED_REFERENCE&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MIS_FLAG"/>
-      <elementValue elementRef="QUERY" value="&quot;$.MIS_FLAG&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MIS_HEAD"/>
-      <elementValue elementRef="QUERY" value="&quot;$.MIS_HEAD&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TRN_DT"/>
-      <elementValue elementRef="QUERY" value="&quot;$.TRN_DT&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="VALUE_DT"/>
-      <elementValue elementRef="QUERY" value="&quot;$.VALUE_DT&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TXN_INIT_DATE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.TXN_INIT_DATE&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FINANCIAL_CYCLE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.FINANCIAL_CYCLE&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PERIOD_CODE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.PERIOD_CODE&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="INSTRUMENT_CODE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.INSTRUMENT_CODE&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BATCH_NO"/>
-      <elementValue elementRef="QUERY" value="&quot;$.BATCH_NO&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CURR_NO"/>
-      <elementValue elementRef="QUERY" value="&quot;$.CURR_NO&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="USER_ID"/>
-      <elementValue elementRef="QUERY" value="&quot;$.USER_ID&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BANK_CODE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.BANK_CODE&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AVLDAYS"/>
-      <elementValue elementRef="QUERY" value="&quot;$.AVLDAYS&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="BALANCE_UPD"/>
-      <elementValue elementRef="QUERY" value="&quot;$.BALANCE_UPD&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.TYPE&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTH_ID"/>
-      <elementValue elementRef="QUERY" value="&quot;$.AUTH_ID&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRINT_STAT"/>
-      <elementValue elementRef="QUERY" value="&quot;$.PRINT_STAT&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTH_STAT"/>
-      <elementValue elementRef="QUERY" value="&quot;$.AUTH_STAT&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CATEGORY"/>
-      <elementValue elementRef="QUERY" value="&quot;$.CATEGORY&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_GL"/>
-      <elementValue elementRef="QUERY" value="&quot;$.CUST_GL&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DISTRIBUTED"/>
-      <elementValue elementRef="QUERY" value="&quot;$.DISTRIBUTED&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NODE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.NODE&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DELETE_STAT"/>
-      <elementValue elementRef="QUERY" value="&quot;$.DELETE_STAT&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ON_LINE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.ON_LINE&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UPDACT"/>
-      <elementValue elementRef="QUERY" value="&quot;$.UPDACT&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NODE_SR_NO"/>
-      <elementValue elementRef="QUERY" value="&quot;$.NODE_SR_NO&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="NETTING_IND"/>
-      <elementValue elementRef="QUERY" value="&quot;$.NETTING_IND&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IB"/>
-      <elementValue elementRef="QUERY" value="&quot;$.IB&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="FLG_POSITION_STATUS"/>
-      <elementValue elementRef="QUERY" value="&quot;$.FLG_POSITION_STATUS&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GLMIS_UPDATE_FLAG"/>
-      <elementValue elementRef="QUERY" value="&quot;$.GLMIS_UPDATE_FLAG&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_ACCRUAL"/>
-      <elementValue elementRef="QUERY" value="&quot;$.PRODUCT_ACCRUAL&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GLMIS_UPDATE_STATUS"/>
-      <elementValue elementRef="QUERY" value="&quot;$.GLMIS_UPDATE_STATUS&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="VDBAL_UPDATE_FLAG"/>
-      <elementValue elementRef="QUERY" value="&quot;$.VDBAL_UPDATE_FLAG&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT"/>
-      <elementValue elementRef="QUERY" value="&quot;$.PRODUCT&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GLMIS_VAL_UPD_FLAG"/>
-      <elementValue elementRef="QUERY" value="&quot;$.GLMIS_VAL_UPD_FLAG&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="EXTERNAL_REF_NO"/>
-      <elementValue elementRef="QUERY" value="&quot;$.EXTERNAL_REF_NO&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PROCESSED_FLAG"/>
-      <elementValue elementRef="QUERY" value="&quot;$.PROCESSED_FLAG&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="MIS_SPREAD"/>
-      <elementValue elementRef="QUERY" value="&quot;$.MIS_SPREAD&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CUST_GL_UPDATE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.CUST_GL_UPDATE&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DONT_SHOWIN_STMT"/>
-      <elementValue elementRef="QUERY" value="&quot;$.DONT_SHOWIN_STMT&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IC_BAL_INCLUSION"/>
-      <elementValue elementRef="QUERY" value="&quot;$.IC_BAL_INCLUSION&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AML_EXCEPTION"/>
-      <elementValue elementRef="QUERY" value="&quot;$.AML_EXCEPTION&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ORIG_PNL_GL"/>
-      <elementValue elementRef="QUERY" value="&quot;$.ORIG_PNL_GL&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="STMT_DT"/>
-      <elementValue elementRef="QUERY" value="&quot;$.STMT_DT&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ENTRY_SEQ_NO"/>
-      <elementValue elementRef="QUERY" value="&quot;$.ENTRY_SEQ_NO&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="IL_BVT_PROCESSED"/>
-      <elementValue elementRef="QUERY" value="&quot;$.IL_BVT_PROCESSED&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="VIRTUAL_AC_NO"/>
-      <elementValue elementRef="QUERY" value="&quot;$.VIRTUAL_AC_NO&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CLAIM_AMOUNT"/>
-      <elementValue elementRef="QUERY" value="&quot;$.CLAIM_AMOUNT&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="SAVE_TIMESTAMP"/>
       <elementValue elementRef="QUERY" value="&quot;$.SAVE_TIMESTAMP&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="AUTH_TIMESTAMP"/>
-      <elementValue elementRef="QUERY" value="&quot;$.AUTH_TIMESTAMP&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="GRP_REF_NO"/>
-      <elementValue elementRef="QUERY" value="&quot;$.GRP_REF_NO&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="REL_EVENT_SR_NO"/>
-      <elementValue elementRef="QUERY" value="&quot;$.REL_EVENT_SR_NO&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_PROCESSOR"/>
-      <elementValue elementRef="QUERY" value="&quot;$.PRODUCT_PROCESSOR&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="RELATED_AC_ENTRY_SR_NO"/>
-      <elementValue elementRef="QUERY" value="&quot;$.RELATED_AC_ENTRY_SR_NO&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DONT_SHOWIN_STMT_FEE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.DONT_SHOWIN_STMT_FEE&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ORG_SOURCE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.ORG_SOURCE&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="ORG_SOURCE_REF"/>
-      <elementValue elementRef="QUERY" value="&quot;$.ORG_SOURCE_REF&quot;"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="SOURCE_CODE"/>
-      <elementValue elementRef="QUERY" value="&quot;$.SOURCE_CODE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONTRACT_REF_NO"/>
+      <elementValue elementRef="QUERY" value="&quot;$.CONTRACT_REF_NO&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VERSION_NO"/>
+      <elementValue elementRef="QUERY" value="&quot;$.VERSION_NO&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODULE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.MODULE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_CODE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.PRODUCT_CODE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_1"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_1&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_2"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_2&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_3"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_3&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_4"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_4&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_5"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_5&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_6"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_6&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_7"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_7&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_8"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_8&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_9"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_9&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_10"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_10&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_11"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_11&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_12"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_12&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_13"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_13&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_14"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_14&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_15"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_15&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_NAME"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_NAME&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VALUE"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VALUE&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_16"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_16&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_17"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_17&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_18"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_18&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_19"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_19&quot;"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_20"/>
+      <elementValue elementRef="QUERY" value="&quot;$.FIELD_VAL_20&quot;"/>
     </elementParameter>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
@@ -643,158 +361,64 @@
     <elementParameter field="CHECK" name="SPLIT_LIST" show="false" value="true"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tExtractJSONFields_1">
-      <column comment="" key="false" length="-1" name="MODULE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="TRN_REF_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EVENT_SR_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EVENT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AC_ENTRY_SR_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AC_BRANCH" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AC_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AC_CCY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DRCR_IND" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TRN_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AMOUNT_TAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FCY_AMOUNT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXCH_RATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LCY_AMOUNT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RELATED_CUSTOMER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RELATED_ACCOUNT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RELATED_REFERENCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MIS_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MIS_HEAD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TRN_DT" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="VALUE_DT" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TXN_INIT_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FINANCIAL_CYCLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PERIOD_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="INSTRUMENT_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BATCH_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CURR_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="USER_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BANK_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AVLDAYS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BALANCE_UPD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AUTH_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PRINT_STAT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AUTH_STAT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CATEGORY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CUST_GL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DISTRIBUTED" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DELETE_STAT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ON_LINE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="UPDACT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NODE_SR_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NETTING_IND" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="IB" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FLG_POSITION_STATUS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="GLMIS_UPDATE_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PRODUCT_ACCRUAL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="GLMIS_UPDATE_STATUS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="VDBAL_UPDATE_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PRODUCT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="GLMIS_VAL_UPD_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTERNAL_REF_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PROCESSED_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MIS_SPREAD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CUST_GL_UPDATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DONT_SHOWIN_STMT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="IC_BAL_INCLUSION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AML_EXCEPTION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ORIG_PNL_GL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="STMT_DT" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ENTRY_SEQ_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="IL_BVT_PROCESSED" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="VIRTUAL_AC_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CLAIM_AMOUNT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SAVE_TIMESTAMP" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AUTH_TIMESTAMP" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="GRP_REF_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="REL_EVENT_SR_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PRODUCT_PROCESSOR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RELATED_AC_ENTRY_SR_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DONT_SHOWIN_STMT_FEE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ORG_SOURCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ORG_SOURCE_REF" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SOURCE_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CONTRACT_REF_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VERSION_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODULE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODUCT_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_4" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_5" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_6" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_7" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_8" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_9" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_10" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_11" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_12" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_13" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_14" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_15" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_16" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_17" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_18" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_19" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_20" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="-1" name="MODULE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="TRN_REF_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EVENT_SR_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EVENT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AC_ENTRY_SR_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AC_BRANCH" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AC_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AC_CCY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DRCR_IND" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TRN_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AMOUNT_TAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FCY_AMOUNT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXCH_RATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="LCY_AMOUNT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RELATED_CUSTOMER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RELATED_ACCOUNT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RELATED_REFERENCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MIS_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MIS_HEAD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TRN_DT" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="VALUE_DT" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TXN_INIT_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FINANCIAL_CYCLE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PERIOD_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="INSTRUMENT_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BATCH_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CURR_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="USER_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BANK_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AVLDAYS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="BALANCE_UPD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AUTH_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PRINT_STAT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AUTH_STAT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CATEGORY" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CUST_GL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DISTRIBUTED" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DELETE_STAT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ON_LINE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="UPDACT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NODE_SR_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="NETTING_IND" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="IB" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="FLG_POSITION_STATUS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="GLMIS_UPDATE_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PRODUCT_ACCRUAL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="GLMIS_UPDATE_STATUS" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="VDBAL_UPDATE_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PRODUCT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="GLMIS_VAL_UPD_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="EXTERNAL_REF_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PROCESSED_FLAG" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="MIS_SPREAD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CUST_GL_UPDATE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DONT_SHOWIN_STMT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="IC_BAL_INCLUSION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AML_EXCEPTION" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ORIG_PNL_GL" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="STMT_DT" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ENTRY_SEQ_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="IL_BVT_PROCESSED" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="VIRTUAL_AC_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="CLAIM_AMOUNT" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="SAVE_TIMESTAMP" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="AUTH_TIMESTAMP" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="GRP_REF_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="REL_EVENT_SR_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="PRODUCT_PROCESSOR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RELATED_AC_ENTRY_SR_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="DONT_SHOWIN_STMT_FEE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ORG_SOURCE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="ORG_SOURCE_REF" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="SOURCE_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CONTRACT_REF_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VERSION_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODULE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODUCT_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_4" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_5" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_6" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_7" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_8" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_9" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_10" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_11" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_12" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_13" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_14" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_15" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_16" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_17" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_18" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_19" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_20" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorJSONField" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -979,81 +603,34 @@
         <mapperTableEntries expression="row3.SOURCE_CODE " name="SOURCE_CODE" nullable="true" type="id_String"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="MODULE" nullable="true" type="id_String"/>
         <mapperTableEntries name="TRN_REF_NO" nullable="true" type="id_String"/>
-        <mapperTableEntries name="EVENT_SR_NO" nullable="true" type="id_String"/>
-        <mapperTableEntries name="EVENT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="AC_ENTRY_SR_NO" nullable="true" type="id_String"/>
-        <mapperTableEntries name="AC_BRANCH" nullable="true" type="id_String"/>
-        <mapperTableEntries name="AC_NO" nullable="true" type="id_String"/>
-        <mapperTableEntries name="AC_CCY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="DRCR_IND" nullable="true" type="id_String"/>
-        <mapperTableEntries name="TRN_CODE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="AMOUNT_TAG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FCY_AMOUNT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="EXCH_RATE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="LCY_AMOUNT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="RELATED_CUSTOMER" nullable="true" type="id_String"/>
-        <mapperTableEntries name="RELATED_ACCOUNT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="RELATED_REFERENCE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="MIS_FLAG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="MIS_HEAD" nullable="true" type="id_String"/>
-        <mapperTableEntries name="TRN_DT" nullable="true" type="id_Long"/>
-        <mapperTableEntries name="VALUE_DT" nullable="true" type="id_Long"/>
-        <mapperTableEntries name="TXN_INIT_DATE" nullable="true" type="id_Long"/>
-        <mapperTableEntries name="FINANCIAL_CYCLE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PERIOD_CODE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="INSTRUMENT_CODE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="BATCH_NO" nullable="true" type="id_String"/>
-        <mapperTableEntries name="CURR_NO" nullable="true" type="id_String"/>
-        <mapperTableEntries name="USER_ID" nullable="true" type="id_String"/>
-        <mapperTableEntries name="BANK_CODE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="AVLDAYS" nullable="true" type="id_String"/>
-        <mapperTableEntries name="BALANCE_UPD" nullable="true" type="id_String"/>
-        <mapperTableEntries name="TYPE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="AUTH_ID" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PRINT_STAT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="AUTH_STAT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="CATEGORY" nullable="true" type="id_String"/>
-        <mapperTableEntries name="CUST_GL" nullable="true" type="id_String"/>
-        <mapperTableEntries name="DISTRIBUTED" nullable="true" type="id_String"/>
-        <mapperTableEntries name="NODE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="DELETE_STAT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ON_LINE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="UPDACT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="NODE_SR_NO" nullable="true" type="id_String"/>
-        <mapperTableEntries name="NETTING_IND" nullable="true" type="id_String"/>
-        <mapperTableEntries name="IB" nullable="true" type="id_String"/>
-        <mapperTableEntries name="FLG_POSITION_STATUS" nullable="true" type="id_String"/>
-        <mapperTableEntries name="GLMIS_UPDATE_FLAG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PRODUCT_ACCRUAL" nullable="true" type="id_String"/>
-        <mapperTableEntries name="GLMIS_UPDATE_STATUS" nullable="true" type="id_String"/>
-        <mapperTableEntries name="VDBAL_UPDATE_FLAG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PRODUCT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="GLMIS_VAL_UPD_FLAG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="EXTERNAL_REF_NO" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PROCESSED_FLAG" nullable="true" type="id_String"/>
-        <mapperTableEntries name="MIS_SPREAD" nullable="true" type="id_String"/>
-        <mapperTableEntries name="CUST_GL_UPDATE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="DONT_SHOWIN_STMT" nullable="true" type="id_String"/>
-        <mapperTableEntries name="IC_BAL_INCLUSION" nullable="true" type="id_String"/>
-        <mapperTableEntries name="AML_EXCEPTION" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ORIG_PNL_GL" nullable="true" type="id_String"/>
-        <mapperTableEntries name="STMT_DT" nullable="true" type="id_Long"/>
-        <mapperTableEntries name="ENTRY_SEQ_NO" nullable="true" type="id_String"/>
-        <mapperTableEntries name="IL_BVT_PROCESSED" nullable="true" type="id_String"/>
-        <mapperTableEntries name="VIRTUAL_AC_NO" nullable="true" type="id_String"/>
-        <mapperTableEntries name="CLAIM_AMOUNT" nullable="true" type="id_String"/>
         <mapperTableEntries name="SAVE_TIMESTAMP" nullable="true" type="id_Long"/>
-        <mapperTableEntries name="AUTH_TIMESTAMP" nullable="true" type="id_Long"/>
-        <mapperTableEntries name="GRP_REF_NO" nullable="true" type="id_String"/>
-        <mapperTableEntries name="REL_EVENT_SR_NO" nullable="true" type="id_String"/>
-        <mapperTableEntries name="PRODUCT_PROCESSOR" nullable="true" type="id_String"/>
-        <mapperTableEntries name="RELATED_AC_ENTRY_SR_NO" nullable="true" type="id_String"/>
-        <mapperTableEntries name="DONT_SHOWIN_STMT_FEE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ORG_SOURCE" nullable="true" type="id_String"/>
-        <mapperTableEntries name="ORG_SOURCE_REF" nullable="true" type="id_String"/>
-        <mapperTableEntries name="SOURCE_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="CONTRACT_REF_NO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="VERSION_NO" nullable="true" type="id_String"/>
+        <mapperTableEntries name="MODULE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="PRODUCT_CODE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_1" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_2" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_3" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_4" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_5" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_6" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_7" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_8" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_9" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_10" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_11" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_12" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_13" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_14" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_15" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_NAME" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VALUE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_16" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_17" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_18" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_19" nullable="true" type="id_String"/>
+        <mapperTableEntries name="FIELD_VAL_20" nullable="true" type="id_String"/>
       </inputTables>
     </nodeData>
   </node>
@@ -1073,7 +650,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;MDWH&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;DWH&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;DWH&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:10jrXKHxq3b5bPrzmW/icQfXancdt+Jz1i7gG3DG3guMEePDKDqKjPM="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:G4kwdRzTVIVe/ec8BFfHkdWPFfoxsXBXUXALaWfibAsZjh9utxMt7+4="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;REALTIME_ACTB_DAILY_LOG&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -1657,14 +1234,14 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;MDWH&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;DWH&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;DWH&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hDIKzlKrcvdTeo+0siOsr0X3XGZ8p0Fql++qV4BqOYPm9NchR5Mp4EQ="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4RsZWzHLzIMFLcJzmi6S4+WiQx8Csf4i+bF0XytcpqjT65FzVjUKDCk="/>
     <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;TRN_REF_NO, SAVE_TIMESTAMP, CONTRACT_REF_NO, VERSION_NO, MODULE, PRODUCT_CODE, FIELD_VAL_1, FIELD_VAL_2, FIELD_VAL_3, FIELD_VAL_4, FIELD_VAL_5, FIELD_VAL_6, FIELD_VAL_7, FIELD_VAL_8, FIELD_VAL_9, FIELD_VAL_10, FIELD_VAL_11, FIELD_VAL_12, FIELD_VAL_13, FIELD_VAL_14, FIELD_VAL_15, FIELD_NAME, FIELD_VALUE, FIELD_VAL_16, FIELD_VAL_17, FIELD_VAL_18, FIELD_VAL_19, FIELD_VAL_20, STREAM_DATE&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;select * from dwh.realtime_cstm_contract_userdef_fields&#13;&#10;&quot;"/>
     <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -1678,12 +1255,101 @@
     <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
     <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="TRN_REF_NO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SAVE_TIMESTAMP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CONTRACT_REF_NO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VERSION_NO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MODULE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRODUCT_CODE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_5"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_6"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_8"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_9"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_10"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_11"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_12"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_13"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_14"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_15"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_NAME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VALUE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_16"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_17"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_18"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_19"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FIELD_VAL_20"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="STREAM_DATE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="MDWH"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tDBInput_1"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="-1" name="TRN_REF_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SAVE_TIMESTAMP" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CONTRACT_REF_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="VERSION_NO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_BigDecimal" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MODULE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="PRODUCT_CODE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_1" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_2" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_3" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_4" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FIELD_VAL_5" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VAL_6" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VAL_7" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VAL_8" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VAL_9" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VAL_10" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VAL_11" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VAL_12" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VAL_13" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VAL_14" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VAL_15" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_NAME" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VALUE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VAL_16" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VAL_17" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VAL_18" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VAL_19" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="FIELD_VAL_20" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="STREAM_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
+    </metadata>
   </node>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tKafkaInput_1" offsetLabelX="0" offsetLabelY="0" source="tKafkaInput_1" target="tExtractJSONFields_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -2888,6 +2554,9 @@
       <elementValue elementRef="TRACE_COLUMN" value="PERIOD_CODE"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CONTRACT_REF_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
@@ -2906,13 +2575,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7995c89f-6b74-4716-89fb-ec01a32babde"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0kSK7GpZAb65z6L3SZzXJ1wiWzd62qrWHqos+/3g7jc6mcVT5J7idiRZnxIbBGem/Rw0oXXiTxBo&#13;
-pG9QP8iWtQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a285f851-1af1-477a-9eec-c32156d2f866"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WvWLz/kUoU7HUCjA6qgUnM7crQIqYG7+6bQLx+TwfyKbJ6HDUf+g0c1aKFpBGSWU2nkGtUmfGvEd&#13;
-wFS2+tMDug==</DigestValue></Reference></SignedInfo><SignatureValue>JBU4hIpfcpmAuhbZ8X5iIw8DPS32hnsqs86eKqyHbZqDhTpnKF2s/H9gUiHYCnuKUs5ASQ6I64W7&#13;
-mGJDL2s22PPEhCYAyQHONlrCTtJASPsm/trnQ3MU5Q3IXssB52XtzKZN0uqwir3IttWq4vz0mJpj&#13;
-UnHsyvgIYB3ej2ijWZQXLG8UOT1EVY1KfQ8z2LI/cG2ONETsaRGB9ecmkr8nR0CTWEg+Z7IY6XLW&#13;
-dvxEI5YDvRxVaILsueAGg32grDD68WvYSSWz7Enu7zBDmDDkojD3Dlf7//iHNahYwhxfFw8vye4E&#13;
-NXqYdiL7VCwqOHIn9f3uRnFb7Z6nMnG+hSCd1w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b2e6a1b9-4292-4657-9c3f-e003accda758"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dDOXPf/pddnVKkUjyiIMFuztAkSy9de3Of2dxbWvudt3R6/TGcwMiVxe3uJUkWBjYCJyKcG7fVMj&#13;
+0ym9asZsOg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_01e1580b-40a5-4bfb-84c5-f79413727def"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NGuK4BQh6tkwpN3PRL6NdJ5fr0xoYbjUYgSL8JXfiBgGN4JHAJbSMofj2nPYT6wHFzfaYvt9R04/&#13;
+pNObQShbGg==</DigestValue></Reference></SignedInfo><SignatureValue>c4jqqHhcE7BBCZx+xtJwMv/dXmAMj3oxpfctLfsSc7J0AB6uU1uyUeuULP0MSDffnNUAoEypR8na&#13;
+vJCFAUsnmi6PG6/R0c8xO8Jhl6JjE+7caRJj5py1ejsKvp9Q9lGxaAf99ZzHeuwWy0byZZqJsIug&#13;
+MwQ8/+GgfKmSow8c9esllDdP4h0jf4oYG/CK9UuWT+fEXXGrCZWnLjiIdn/dr+BwokRp/P28Y+WQ&#13;
+Qj1G0TukGE+g4zlj4rO7sak5bS3NQ4B5QJzJIVvMqA0CkK9/ZVZ0ywjeJQlUSKG5LGO5KUVBMi0k&#13;
+WPtp7SVKEv8R5cnr6Ddl6KyKUyQ4N99z5tEzeA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -2934,4 +2603,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a285f851-1af1-477a-9eec-c32156d2f866" Target="#_7995c89f-6b74-4716-89fb-ec01a32babde"><Timestamp>2023-11-23 06:47:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_01e1580b-40a5-4bfb-84c5-f79413727def" Target="#_b2e6a1b9-4292-4657-9c3f-e003accda758"><Timestamp>2023-11-23 06:49:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
