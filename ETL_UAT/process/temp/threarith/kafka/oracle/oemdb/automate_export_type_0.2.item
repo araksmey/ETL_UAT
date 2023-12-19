@@ -47,7 +47,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:4HKXgTwwdLzfxwKAEIX/U91QeE+aoNYrLobREqxu"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:4rljEhCyezDNvmBcUuKqwSmaEmNK6Xdd/+z8pGJN"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -82,7 +82,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nOsoF2Q4yj3qY+tlBTqlYkpV7LDHpeQ0uUmNuR1V"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:egtNfxS+LJB6A7/BFeKFanKhrY5hUbK9olwUiVUb"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -168,6 +168,8 @@
     <elementParameter field="TEXT" name="SCHEMA_REGISTRY_CUSTOM_KEY_DESERIALIZER" show="false" value="&quot;org.apache.kafka.common.serialization.ByteArrayDeserializer&quot;"/>
     <elementParameter field="CLOSED_LIST" name="SCHEMA_REGISTRY_VALUE_DESERIALIZER" show="false" value="AVRO"/>
     <elementParameter field="TEXT" name="SCHEMA_REGISTRY_CUSTOM_VALUE_DESERIALIZER" show="false" value="&quot;org.apache.kafka.common.serialization.ByteArrayDeserializer&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tKafkaInput_1">
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
@@ -335,6 +337,8 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="UTF-8"/>
     <elementParameter field="CHECK" name="USE_LOOP_AS_ROOT" value="true"/>
     <elementParameter field="CHECK" name="SPLIT_LIST" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tExtractJSONFields_1">
       <column comment="" key="false" length="-1" name="ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
@@ -357,7 +361,7 @@
       <column comment="" key="false" length="-1" name="AWS_BUCKET" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DRAFT_EMAIL_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DRAFT_EMAIL_FOLDER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RPF" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RPF" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EMAIL_SUBJECT_PATTERN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CREATED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MODIFIED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
@@ -383,7 +387,7 @@
       <column comment="" key="false" length="-1" name="AWS_BUCKET" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DRAFT_EMAIL_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DRAFT_EMAIL_FOLDER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RPF" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RPF" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EMAIL_SUBJECT_PATTERN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CREATED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MODIFIED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Long" usefulColumn="true"/>
@@ -405,9 +409,11 @@
     <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
     <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
     <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="out1">
-      <column comment="" key="false" length="-1" name="ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" length="-1" name="ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EXPORT_TYPE" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EMAIL_FROM" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EMAIL_TO" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
@@ -427,13 +433,13 @@
       <column comment="" key="false" length="-1" name="AWS_BUCKET" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DRAFT_EMAIL_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DRAFT_EMAIL_FOLDER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RPF" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RPF" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EMAIL_SUBJECT_PATTERN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CREATED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MODIFIED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row3.CREATED_DATE == null?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date(((long)(row3.CREATED_DATE)) - 25200000)), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="created_date" type="id_Date"/>
         <mapperTableEntries expression="row3.MODIFIED_DATE == null?null:TalendDate.TO_DATE(TalendDate.formatDate(&quot;dd-MMM-yy hh:mm:ss a&quot;, new java.util.Date(((long)(row3.MODIFIED_DATE)) -25200000)), &quot;dd-MMM-yy hh:mm:ss a&quot;) " name="modified_date" type="id_Date"/>
@@ -459,7 +465,7 @@
         <mapperTableEntries expression="row3.AWS_BUCKET " name="AWS_BUCKET" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row3.DRAFT_EMAIL_ID " name="DRAFT_EMAIL_ID" nullable="true" type="id_String"/>
         <mapperTableEntries expression="row3.DRAFT_EMAIL_FOLDER " name="DRAFT_EMAIL_FOLDER" nullable="true" type="id_String"/>
-        <mapperTableEntries expression="row3.RPF " name="RPF" nullable="true" type="id_String"/>
+        <mapperTableEntries expression="row3.RPF " name="RPF" nullable="true" type="id_Double"/>
         <mapperTableEntries expression="row3.EMAIL_SUBJECT_PATTERN " name="EMAIL_SUBJECT_PATTERN" nullable="true" type="id_String"/>
         <mapperTableEntries expression="Var.created_date " name="CREATED_DATE" nullable="true" type="id_Date"/>
         <mapperTableEntries expression="Var.modified_date " name="MODIFIED_DATE" nullable="true" type="id_Date"/>
@@ -485,7 +491,7 @@
         <mapperTableEntries name="AWS_BUCKET" nullable="true" type="id_String"/>
         <mapperTableEntries name="DRAFT_EMAIL_ID" nullable="true" type="id_String"/>
         <mapperTableEntries name="DRAFT_EMAIL_FOLDER" nullable="true" type="id_String"/>
-        <mapperTableEntries name="RPF" nullable="true" type="id_String"/>
+        <mapperTableEntries name="RPF" nullable="true" type="id_Double"/>
         <mapperTableEntries name="EMAIL_SUBJECT_PATTERN" nullable="true" type="id_String"/>
         <mapperTableEntries name="CREATED_DATE" nullable="true" type="id_Long"/>
         <mapperTableEntries name="MODIFIED_DATE" nullable="true" type="id_Long"/>
@@ -508,7 +514,7 @@
     <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;MDWH&quot;"/>
     <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;STAGING&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;STAGING&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:gesFb77ZVl9RMW9QlHKebsOsUhoXb51x/0vDQKIXArg9SfCnnKctmiaxhgRw"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:bA70NNkh1IZ04penqoPQ+AdI6sUT8c5D4uNg52mJD7TceqnA29dWsm3JoRBZ"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;REALTIME_AUTOMATE_EXPORT_TYPE&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
@@ -663,6 +669,7 @@
     <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
     <elementParameter field="CHECK" name="SUPPORT_NLS" value="false"/>
     <elementParameter field="TEXT" name="LABEL" value="MSTAGING"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
       <column comment="" key="true" length="-1" name="ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
@@ -685,7 +692,7 @@
       <column comment="" key="false" length="-1" name="AWS_BUCKET" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DRAFT_EMAIL_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DRAFT_EMAIL_FOLDER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RPF" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RPF" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EMAIL_SUBJECT_PATTERN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CREATED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MODIFIED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
@@ -711,7 +718,7 @@
       <column comment="" key="false" length="-1" name="AWS_BUCKET" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DRAFT_EMAIL_ID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DRAFT_EMAIL_FOLDER" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RPF" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RPF" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="NUMBER" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="EMAIL_SUBJECT_PATTERN" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CREATED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="MODIFIED_DATE" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
@@ -950,13 +957,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2e1385a3-4f9c-44a8-a267-da334f2bd748"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1E8umVjWsbtznhpXU6ypilXPHWdSDgUBPVvMVOzjyNFbhKmNf3xVlYukSRwFvL76fDueuHrezeyW&#13;
-L0+niNewPw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_64e4de87-2386-49c8-af05-76219fef631f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>o9dXjRkn/IhO1LFefzTEDauSg6FyVirsrztcjDsE7J3v7uR1ojHgtvT1PwZRlnipt7K9pqYFa2Ti&#13;
-KSBXX88OFw==</DigestValue></Reference></SignedInfo><SignatureValue>BNWiff20kJg3+C5+coN/MC/cIGulGXoO/4AJGYClNQ6zjv+IuflwglZT9Zc9+ise2L6Kg513pB9N&#13;
-wCMJ2AS2NglmOztZMrOXLz7dtXaMR5yyB5CTq1WyYXIWMca8KahZ0BiHWFS9z6vk9dVIg4lyn2ER&#13;
-GVFPfcvjBZ83TkBGfzfbnuj+ddHJR8NwyTgxjIAjA0jJ/q/xW36vRC+SFP25PUzUo+v/Rtpi8YzU&#13;
-MNpxyjkEq23jYxueurMyw7PYhCcgc2pdZioJpwi6SH5749OgLs2uNs3tYdnSyhjx1kTC+0E72Y3u&#13;
-iadjXsSGjyXvFKKcx3zvTxBLYDX7j/DlXsnwUg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_35eb219a-87d7-433e-a6a3-6d92550634b7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>aOKeizLhYaBDn/DVjPmu6JHSRIzfMmPH5epYIz5+I9L95Ggwi0wfXWOgobsqrHN9znwQ+x21DOk9&#13;
+jicdQ3bKzg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_138491d0-8217-43bf-9739-dbe23a1f849a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iBOnCPx0bE6YaPV5oh0kZMSxW5GrtAlgSm10IVWrVuAV+UbXTYid42NMTYXhWDml7zTOL9RY7R9h&#13;
+QlNMoQ/1hg==</DigestValue></Reference></SignedInfo><SignatureValue>QGEFyMKkFn7cTvu5vTHBIyrUB2ROQNvcnjNyw8BuMxZh46sYFQhYJKKXhbs4WH3xiD3jPzBzHw/G&#13;
+q0Oo7Vo99dKwUE1O7J25n3oYQTeUk5aKKJfTtGHLHqWjK4SUtadKS39rBrT4yoBzFYDdrXO/S9ge&#13;
+0ysU1h9sCeuCo2QeN3c0hz87q7qajdWc3enXMO5XrgzT/nRzY9KRENc4KLso+M1JGI+NglXLg5V1&#13;
+xxt4bJ92qGf5uEvW+89a2dtH5vnR6TJRQf7QW30YBip8gGXLx3ykhY06Kl3QdOraPHoyIfSAnThw&#13;
+93Qwy60xk0xKHfdms0UtesmUJo5Tf6slY+yLUw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -978,4 +985,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_64e4de87-2386-49c8-af05-76219fef631f" Target="#_2e1385a3-4f9c-44a8-a267-da334f2bd748"><Timestamp>2023-10-05 11:06:15</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_138491d0-8217-43bf-9739-dbe23a1f849a" Target="#_35eb219a-87d7-433e-a6a3-6d92550634b7"><Timestamp>2023-12-19 09:04:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
