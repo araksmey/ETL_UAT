@@ -1419,6 +1419,10 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "ETL_UAT:_0xC6kKoYEe6cloEz7-kVKw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
     "id" : "ETL_UAT:_5nCzcKoIEe6cloEz7-kVKw",
     "version" : "Latest",
     "type" : "job"
