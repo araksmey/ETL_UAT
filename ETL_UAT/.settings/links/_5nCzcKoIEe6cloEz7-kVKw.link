@@ -1,0 +1,14 @@
+{
+  "itemId" : "_5nCzcKoIEe6cloEz7-kVKw",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_M4qaAFwpEe6rG-jalNJv9w",
+    "parameterList" : [ {
+      "id" : "_mlSOYGNqEe684J3fK1s7Zw",
+      "name" : "broker_list"
+    }, {
+      "id" : "_M4-jEVwpEe6rG-jalNJv9w",
+      "name" : "group_id"
+    } ]
+  } ]
+}
